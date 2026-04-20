@@ -4,6 +4,7 @@
   --color-bg-card: #f9f7ff;
   --color-bg-card-hover: #f3efff;
   --color-text: #1a1a2e;
+  --color-text-gallery: #d3d3e5;
   --color-text-secondary: #5a5a70;
   --color-accent: #7c3aed;
   --color-accent-hover: #6d28d9;
@@ -856,7 +857,7 @@ img {
   font-family: var(--font-heading);
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: var(--color-text-gallery);
   background: rgba(10, 10, 15, 0.6);
   backdrop-filter: blur(10px);
   padding: 0.25rem 0.75rem;
@@ -1816,10 +1817,14 @@ img {
 }
 
 .masonry-gallery__item-caption {
-  color: white;
+  color: var(--color-text-gallery);
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0;
+}
+
+.masonry-gallery__overlay .masonry-gallery__item-caption {
+  color: #ffffff;
 }
 
 /* Lightbox */
