@@ -19,7 +19,7 @@ export default function MasonryGallery({ images, categories }: MasonryGalleryPro
 
   return (
     <div className="masonry-gallery">
-      {/* Tab Navigation */}
+      {/* Tab Navigation */} {/*
       <div className="masonry-gallery__tabs">
         {categories.map((cat) => (
           <button
@@ -30,7 +30,20 @@ export default function MasonryGallery({ images, categories }: MasonryGalleryPro
             {cat}
           </button>
         ))}
-      </div>
+      </div> */}
+
+      {/* Tab Navigation — nur bei mehreren Kategorien */}
+      {categories.length > 1 && (
+        <div className="masonry-gallery__tabs">
+          {categories.map((cat) => ( <button
+            key={cat}
+            className={`masonry-gallery__tab${cat === activeTab ? ' masonry-gallery__tab--active' : ''}`}
+            onClick={() => setActiveTab(cat)}
+          >
+            {cat}
+          </button> ))}
+        </div>
+      )}
 
       {/* Masonry Grid */}
       <div className="masonry-gallery__grid">

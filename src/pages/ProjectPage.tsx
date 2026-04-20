@@ -332,7 +332,7 @@ export default function ProjectPage() {
           </div>
         )}
 
-        {/* Gallery Section */}
+        {/* Gallery Section */} {/*
         {project.gallery && project.gallery.length > 0 && (
           <div className="project-detail__section">
             <h3>Gallery</h3>
@@ -346,7 +346,20 @@ export default function ProjectPage() {
               ))}
             </div>
           </div>
-        )}
+        )} */}
+
+        {/* Gallery Section */}
+      {project.gallery && project.gallery.length > 0 && (
+        <div className="project-detail__section">
+          <h3>Gallery</h3>
+          <p style={{ marginBottom: '1.5rem', color: 'var(--color-text-secondary)' }}>Visual highlights from the project</p>
+          <MasonryGallery
+            images={project.gallery.map(img => ({ ...img, category: 'Gallery' }))}
+            categories={['Gallery']}
+          />
+        </div>
+      )}
+        
       </div>
 
       {/* Next Project */}
