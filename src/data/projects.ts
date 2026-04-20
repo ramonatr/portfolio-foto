@@ -16,7 +16,7 @@ export const projects = {
       color: '#FF6B35',
       year: '2024',
       overview: 'A photography portfolio showcasing coursework from the Digital Photography program at {Hochschule}. This project demonstrates mastery of composition, lighting, and visual storytelling across multiple photographic genres.',
-      role: '{Name}',
+      role: 'Ramona',
       duration: '1 semester',
       team: '1 Photographer · Instructor guidance',
       client: '{Hochschule} — {Hochschule}',
@@ -43,7 +43,7 @@ export const projects = {
         { title: 'Curation', description: 'Select best images and organize them into thematic series that tell a cohesive story.', icon: '✨' },
         { title: 'Presentation', description: 'Design portfolio layout and create engaging descriptions for each series.', icon: '🖼️' },
       ],
-      solution: '{Name} developed a distinctive photographic voice by deeply exploring three distinct genres. Each category demonstrates both technical mastery and artistic sensitivity, with careful attention to composition, lighting, and emotional impact.',
+      solution: 'Ramona developed a distinctive photographic voice by deeply exploring three distinct genres. Each category demonstrates both technical mastery and artistic sensitivity, with careful attention to composition, lighting, and emotional impact.',
       solutionDetails: [
         'Nature Photography Series: Capturing landscapes with emphasis on light, color, and natural elements',
         'Animal Photography: Documenting wildlife behavior and personality with respect and authenticity',
@@ -65,7 +65,7 @@ export const projects = {
         'Received positive feedback from instructors and peers',
       ],
       testimonial: {
-        quote: 'The growth from first shoot to final portfolio was remarkable. The technical skills are evident, but what impressed me most was the development of {Name}\'s artistic voice and creative vision.',
+        quote: 'The growth from first shoot to final portfolio was remarkable. The technical skills are evident, but what impressed me most was the development of Ramona\'s artistic voice and creative vision.',
         author: 'Photography Instructor',
         role: '{Hochschule} Department of Digital Media',
       },
@@ -249,7 +249,7 @@ export const projects = {
         'Return rate decreased from 32% to 18% thanks to improved product info',
       ],
       testimonial: {
-        quote: 'The redesign paid for itself within 6 weeks. {Name}\'s data-driven approach meant we weren\'t guessing — every design decision was backed by evidence.',
+        quote: 'The redesign paid for itself within 6 weeks. Ramona\'s data-driven approach meant we weren\'t guessing — every design decision was backed by evidence.',
         author: 'Elena Richter',
         role: 'Head of E-Commerce, ShopScape',
       },
@@ -324,7 +324,7 @@ export const projects = {
         'Platform was featured in EdTech Magazine\'s "Top 10 Learning Platforms of 2024"',
       ],
       testimonial: {
-        quote: '{Name} didn\'t just design an app — they designed a learning experience. The gamification feels natural, not gimmicky, and the micro-learning approach has genuinely changed how I study.',
+        quote: 'Ramona didn\'t just design an app — they designed a learning experience. The gamification feels natural, not gimmicky, and the micro-learning approach has genuinely changed how I study.',
         author: 'Dr. Thomas Hoffmann',
         role: 'Dean of Digital Learning, TechAcademy',
       },
@@ -350,7 +350,7 @@ export const projects = {
       color: '#FF6B35',
       year: '2024',
       overview: 'Ein Fotografie-Portfolio, das Kursarbeiten aus dem Digitalfotografie-Programm der Technischen Hochschule Ingolstadt  präsentiert. Dieses Projekt demonstriert Meisterschaft in Komposition, Beleuchtung und visuelles Storytelling über mehrere fotografische Genres.',
-      role: '{Name}',
+      role: 'Ramona',
       duration: '1 Semester',
       team: '1 Fotograf · Betreuung durch Dozenten',
       client: '{Hochschule} — {Hochschule}',
@@ -377,7 +377,7 @@ export const projects = {
         { title: 'Auswahl', description: 'Wähle beste Bilder aus und organisiere sie in thematische Serien, die eine kohärente Geschichte erzählen.', icon: '✨' },
         { title: 'Präsentation', description: 'Gestalte Portfolio-Layout und erstelle ansprechende Beschreibungen für jede Serie.', icon: '🖼️' },
       ],
-      solution: '{Name} entwickelte eine charakteristische fotografische Stimme durch tiefe Erforschung von drei verschiedenen Genres. Jede Kategorie demonstriert sowohl technische Meisterschaft als auch künstlerische Sensibilität mit sorgfältiger Aufmerksamkeit auf Komposition, Beleuchtung und emotionalen Impact.',
+      solution: 'Ramona entwickelte eine charakteristische fotografische Stimme durch tiefe Erforschung von drei verschiedenen Genres. Jede Kategorie demonstriert sowohl technische Meisterschaft als auch künstlerische Sensibilität mit sorgfältiger Aufmerksamkeit auf Komposition, Beleuchtung und emotionalen Impact.',
       solutionDetails: [
         'Naturfotografie-Serie: Erfassung von Landschaften mit Betonung auf Licht, Farbe und Naturelemente',
         'Tierfotografie: Dokumentation von Wildtierverhalten und Persönlichkeit mit Respekt und Authentizität',
@@ -399,7 +399,7 @@ export const projects = {
         'Positive Rückmeldungen von Dozenten und Kommilitonen erhalten',
       ],
       testimonial: {
-        quote: 'Die Entwicklung vom ersten Shooting bis zum finalen Portfolio war bemerkenswert. Die technischen Fähigkeiten sind evident, aber was mich am meisten beeindruckte, war die Entwicklung von {Name}s künstlerischer Stimme und kreativer Vision.',
+        quote: 'Die Entwicklung vom ersten Shooting bis zum finalen Portfolio war bemerkenswert. Die technischen Fähigkeiten sind evident, aber was mich am meisten beeindruckte, war die Entwicklung von Ramonas künstlerischer Stimme und kreativer Vision.',
         author: 'Fotografie-Dozent',
         role: '{Hochschule} Abteilung für Digitale Medien',
       },
@@ -508,7 +508,7 @@ export const projects = {
         'Durchschnittliche Sitzungsdauer um 34% gestiegen',
       ],
       testimonial: {
-        quote: '{Name} hat unsere App von unserer größten Schwäche in unseren stärksten Wettbewerbsvorteil verwandelt. Der forschungsgetriebene Ansatz hat Erkenntnisse zutage gefördert, die wir allein nie gefunden hätten.',
+        quote: 'Ramona hat unsere App von unserer größten Schwäche in unseren stärksten Wettbewerbsvorteil verwandelt. Der forschungsgetriebene Ansatz hat Erkenntnisse zutage gefördert, die wir allein nie gefunden hätten.',
         author: 'Max Mustermann',
         role: 'CPO, FinFlow Technologies',
       },
@@ -733,7 +733,7 @@ export const projects = {
         'Plattform im EdTech Magazine als "Top 10 Lernplattformen 2024" geführt',
       ],
       testimonial: {
-        quote: '{Name} hat nicht einfach eine App gestaltet — sie hat ein Lernerlebnis geschaffen. Die Gamification fühlt sich natürlich an, nicht aufgesetzt, und der Micro-Learning-Ansatz hat wirklich verändert, wie ich lerne.',
+        quote: 'Ramona hat nicht einfach eine App gestaltet — sie hat ein Lernerlebnis geschaffen. Die Gamification fühlt sich natürlich an, nicht aufgesetzt, und der Micro-Learning-Ansatz hat wirklich verändert, wie ich lerne.',
         author: 'Dr. Thomas Hoffmann',
         role: 'Dekan für Digitales Lernen, TechAcademy',
       },

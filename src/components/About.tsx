@@ -13,7 +13,7 @@ export default function About() {
           <div className="about__image">
             <div className="about__image-frame">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=520&h=640&fit=crop&crop=face"
+                src="https://ik.imagekit.io/pspu4pme7/Portfolio/IMG_6247.jpeg"
                 alt={t.hero.name}
                 className="about__image-photo"
               />
