@@ -58,15 +58,16 @@ const en: Translations = {
     greeting: 'Hello, I\'m',
     name: 'Ramona',
     title: 'UX Designer',
-    subtitle: 'I craft intuitive digital experiences that bridge the gap between user needs and business goals. With a human-centered approach, I transform complex problems into elegant, accessible solutions.',
+    subtitle: 'I design clear digital experiences that link user needs with business goals. Through a human-centered process, I turn complex challenges into elegant, accessible products.',
     cta: 'View My Work',
   },
   about: {
     sectionTitle: 'About Me',
     description: [
-      'I\'m a passionate UX Designer with a keen eye for detail and a deep understanding of user behavior. My design philosophy centers around empathy, research, and iterative thinking.',
-      'With experience across various industries, I bring a versatile skill set that combines strategic thinking with hands-on design execution. I believe great design is invisible — it just works.',
-      'When I\'m not designing, you\'ll find me exploring new design trends, attending UX meetups, or sketching ideas in my notebook.',
+      'Hi and welcome to my Portfolio!!',
+      'My name is Ramona, i\'m 23 years old and currently studying UXD in the 4th semester.',
+      'Outside of uni i really enjoy doing sports and going to the gym, besides that i recently started running as well.',
+      'Other interests of mine are of course being creative in many different ways, my love and excitement about cars and motorsports, which i got from my dad, and idealy a combination of both!',
     ],
   },
   skills: {
@@ -140,15 +141,16 @@ const de: Translations = {
     greeting: 'Hallo, ich bin',
     name: 'Ramona',
     title: 'UX Designerin',
-    subtitle: 'Ich gestalte intuitive digitale Erlebnisse, die Nutzerbedürfnisse und Geschäftsziele verbinden. Mit einem menschzentrierten Ansatz verwandle ich komplexe Probleme in elegante, zugängliche Lösungen.',
+    subtitle: 'Ich gestalte klare digitale Erlebnisse, die Nutzerbedürfnisse und Geschäftsziele miteinander verbinden. Mit einem menschenzentrierten Ansatz mache ich komplexe Herausforderungen elegant und zugänglich.',
     cta: 'Meine Arbeiten ansehen',
   },
   about: {
     sectionTitle: 'Über Mich',
     description: [
-      'Ich bin eine leidenschaftliche UX Designerin mit einem Auge fürs Detail und einem tiefen Verständnis für Nutzerverhalten. Meine Designphilosophie basiert auf Empathie, Forschung und iterativem Denken.',
-      'Mit Erfahrung in verschiedenen Branchen bringe ich ein vielseitiges Skillset mit, das strategisches Denken mit praktischer Designumsetzung verbindet. Ich glaube, dass großartiges Design unsichtbar ist — es funktioniert einfach.',
-      'Wenn ich nicht gerade designe, entdecke ich neue Designtrends, besuche UX Meetups oder skizziere Ideen in meinem Notizbuch.',
+      'Hi und herzlich willkommen zu meinem Portfolio!!',
+      'Mein Name ist Ramona, ich bin 23 Jahre alt und studiere derzeit UX-Design im 4. Semester.',
+      'Außerhalb der Uni mache ich sehr gerne Sport und gehe ins Fitnessstudio, außerdem habe ich vor Kurzem angefangen zu laufen.',
+      'Weitere Interessen von mir sind natürlich kreativ zu sein auf vielfältige Weise, meine Liebe und Begeisterung für Autos und Motorsport, die ich von meinem Papa habe, und idealerweise eine Kombination aus beidem!',
     ],
   },
   skills: {

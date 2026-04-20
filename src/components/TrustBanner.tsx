@@ -1,33 +1,52 @@
 import { useLanguage } from '../i18n/LanguageContext';
 
-const COMPANIES = [
-  'Google',
-  'Siemens',
-  'BMW Group',
-  'SAP',
-  'Deutsche Telekom',
-  'Zalando',
-  'N26',
-  'Allianz',
-  'Bosch',
-  'Spotify',
+const SOFTWARE = [
+  'Photoshop',
+  'Illustrator',
+  'InDesign',
+  'AfterEffects',
+  'Figma',
+  'LightroomClassic',
+  'Miro',
+  'Notion',
+  'Framer',
+];
+
+const LANGUAGES = [
+  'Java',
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'PHP',
+  'Arduino',
 ];
 
 export default function TrustBanner() {
   const { language } = useLanguage();
-  const label = language === 'de' ? 'Unternehmen, mit denen ich gearbeitet habe' : 'Companies I\'ve worked with';
+  const softwareLabel = language === 'de' ? 'Übersicht von Software, die ich kann' : 'Overview of software I know';
+  const languageLabel = language === 'de' ? 'Übersicht von Programmiersprachen, die ich kenne' : 'Overview of programming languages I know';
 
-  // Double the items for seamless infinite scroll
-  const items = [...COMPANIES, ...COMPANIES];
+  const softwareItems = [...SOFTWARE, ...SOFTWARE, ...SOFTWARE];
+  const languageItems = [...LANGUAGES, ...LANGUAGES, ...LANGUAGES];
 
   return (
     <section className="trust-banner">
-      <p className="trust-banner__label">{label}</p>
+      <p className="trust-banner__label">{softwareLabel}</p>
       <div className="trust-banner__track">
         <div className="trust-banner__marquee">
-          {items.map((company, i) => (
-            <span key={i} className="trust-banner__item">
-              {company}
+          {softwareItems.map((item, i) => (
+            <span key={`software-${i}`} className="trust-banner__item">
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+      <p className="trust-banner__label trust-banner__label--second">{languageLabel}</p>
+      <div className="trust-banner__track">
+        <div className="trust-banner__marquee">
+          {languageItems.map((item, i) => (
+            <span key={`language-${i}`} className="trust-banner__item">
+              {item}
             </span>
           ))}
         </div>
