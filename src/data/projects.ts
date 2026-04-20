@@ -12,14 +12,14 @@ export const projects = {
       id: 'photoportfolio',
       title: 'Digital Photography Course Portfolio',
       category: 'Photography · Portfolio',
-      thumbnail: 'https://picsum.photos/seed/thumb-photo/800/520',
+      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/IMG_5206.jpg',
       color: '#FF6B35',
-      year: '2024',
-      overview: 'A photography portfolio showcasing coursework from the Digital Photography program at {Hochschule}. This project demonstrates mastery of composition, lighting, and visual storytelling across multiple photographic genres.',
+      year: '2026',
+      overview: 'A photography portfolio showcasing coursework from the Digital Photography program at Technische Hochschule Ingolstadt. This project demonstrates mastery of composition, lighting, and visual storytelling across multiple photographic genres.',
       role: 'Ramona',
       duration: '1 semester',
       team: '1 Photographer · Instructor guidance',
-      client: '{Hochschule} — {Hochschule}',
+      client: 'Technische Hochschule Ingolstadt — Technische Hochschule Ingolstadt',
       tools: ['Camera', 'Adobe Lightroom', 'Adobe Photoshop', 'Portfolio Website'],
       challenge: 'Create a cohesive photography portfolio that demonstrates technical proficiency and artistic vision across diverse photographic disciplines while maintaining a consistent visual aesthetic.',
       challengeDetails: [
@@ -67,7 +67,7 @@ export const projects = {
       testimonial: {
         quote: 'The growth from first shoot to final portfolio was remarkable. The technical skills are evident, but what impressed me most was the development of Ramona\'s artistic voice and creative vision.',
         author: 'Photography Instructor',
-        role: '{Hochschule} Department of Digital Media',
+        role: 'Technische Hochschule Ingolstadt Department of Digital Media',
       },
       learnings: [
         'Vision and consistency matter more than equipment — develop your unique perspective',
@@ -118,7 +118,7 @@ export const projects = {
     {
       id: 'finflow',
       title: 'FinFlow — Banking App Redesign',
-      category: 'Mobile App · Fintech',
+      category: 'UI · Automotive',
       thumbnail: 'https://picsum.photos/seed/thumb-finflow/800/520',
       color: '#6C63FF',
       year: '2025',
@@ -353,7 +353,7 @@ export const projects = {
       role: 'Ramona',
       duration: '1 Semester',
       team: '1 Fotograf · Betreuung durch Dozenten',
-      client: '{Hochschule} — {Hochschule}',
+      client: 'Technische Hochschule Ingolstadt — Technische Hochschule Ingolstadt',
       tools: ['Kamera', 'Adobe Lightroom', 'Adobe Photoshop', 'Portfolio-Website'],
       challenge: 'Erstelle ein kohäsives Fotografie-Portfolio, das technische Kenntnisse und künstlerische Vision über verschiedene fotografische Disziplinen hinweg demonstriert, während eine konsistente visuelle Ästhetik beibehalten wird.',
       challengeDetails: [
@@ -401,7 +401,7 @@ export const projects = {
       testimonial: {
         quote: 'Die Entwicklung vom ersten Shooting bis zum finalen Portfolio war bemerkenswert. Die technischen Fähigkeiten sind evident, aber was mich am meisten beeindruckte, war die Entwicklung von Ramonas künstlerischer Stimme und kreativer Vision.',
         author: 'Fotografie-Dozent',
-        role: '{Hochschule} Abteilung für Digitale Medien',
+        role: 'Technische Hochschule Ingolstadt Abteilung für Digitale Medien',
       },
       learnings: [
         'Vision und Konsistenz sind wichtiger als Ausrüstung — entwickle deine einzigartige Perspektive',
@@ -452,7 +452,7 @@ export const projects = {
     {
       id: 'finflow',
       title: 'FinFlow — Banking App Redesign',
-      category: 'Mobile App · Fintech',
+      category: 'UI · Automotive',
       thumbnail: 'https://picsum.photos/seed/thumb-finflow/800/520',
       color: '#6C63FF',
       year: '2025',

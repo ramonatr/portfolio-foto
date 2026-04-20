@@ -10,18 +10,10 @@ export default function Contact() {
       <p className="contact__desc">{t.contact.description}</p>
       <div className="contact__buttons">
         <a
-          href="mailto:{email}"
+          href="mailto:ramona.treittinger@web.de"
           className="contact__btn contact__btn--primary"
         >
           ✉ {t.contact.email}
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact__btn contact__btn--secondary"
-        >
-          🔗 {t.contact.linkedin}
         </a>
       </div>
       <SnakeGame />
