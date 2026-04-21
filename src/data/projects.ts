@@ -130,14 +130,14 @@ export const projects = {
       tools: ['Figma'],
       challenge: 'Create an intuitive and visually appealing car interface that enhances driver safety and user experience while minimizing distraction. The design needed to balance functionality with aesthetics, providing quick access to critical information and controls without overwhelming the driver.',
       challengeDetails: [
-        'Create an interface that doesn\t confuse or distract the driver',
-        'Inutitive navigation and information hierarchy for quick access to critical functions',
+        'Create an interface that doesn\'t confuse or distract the driver',
+        'Intuitive navigation and information hierarchy for quick access to critical functions',
         'Appealing visual design that fits the automotive context',
       ],
       researchInsights: [
         'Big buttons and clear typography are essential for readability while driving',
         'Important buttons should be easily reachable without looking away from the road',
-        'Claritiy and structure are more important than flashy design in a car interface',
+        'Clarity and structure are more important than flashy design in a car interface',
         'Minimal color palette',
         'Quick operations and minimal interactions are key for safety',
       ],
@@ -147,13 +147,12 @@ export const projects = {
         { title: 'Wireframing', description: 'Developing low-fidelity wireframes to visualize the layout and structure', icon: '🖇️' },
         { title: 'Design', description: 'Creating high-fidelity designs with attention to detail and user experience', icon: '🖥️' },
       ],
-      solution: '-',
+      solution: 'An intuitive and visually appealing car interface design that prioritizes safety and ease of use. The design features a clear information hierarchy, large buttons, and a minimal color palette to ensure quick access to critical functions without overwhelming the driver.',
       solutionDetails: [
-        '--',
-        '--',
-        '--',
-        '--',
-        '--',
+        'Big menu buttons on the drivers side for easy reach and readability',
+        'Clear typography and iconography for quick recognition',
+        'Minimalist design with a focus on essential information and controls',
+        
       ],
       keyFeatures: [
         { title: 'Side Bar', description: 'Easy to use while driving, hightlights where you are and what you can do.' },
@@ -170,11 +169,11 @@ export const projects = {
         '-',
       ],
       
-      learnings: [
+      /*learnings: [
         '-',
         '-',
         '-',
-      ],
+      ],*/
       gallery: [
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Automotive/Persona.png', caption: 'Persona - Based on research findings' },
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Automotive/User%20Journey.png?updatedAt=1776700462553', caption: 'User Journey' },
@@ -486,13 +485,12 @@ export const projects = {
         { title: 'Wireframing', description: 'Entwicklung von Low-Fidelity-Wireframes zur Visualisierung des Layouts und der Struktur', icon: '🖇️' },
         { title: 'Design', description: 'Erstellung von High-Fidelity-Designs mit Fokus auf Detail und Benutzererfahrung', icon: '🖥️' },
       ],
-      solution: '-',
+      solution: 'Ein intuitives und optisch ansprechendes Design für die Fahrzeug-Benutzeroberfläche, bei dem Sicherheit und Benutzerfreundlichkeit im Vordergrund stehen. Das Design zeichnet sich durch eine klare Informationshierarchie, große Schaltflächen und eine reduzierte Farbpalette aus, um einen schnellen Zugriff auf wichtige Funktionen zu gewährleisten, ohne den Fahrer zu überfordern.',
       solutionDetails: [
-        '--',
-        '--',
-        '--',
-        '--',
-        '--',
+        'Große Menütasten auf der Fahrerseite für einfache Erreichbarkeit und Lesbarkeit',
+        'Klare Typografie und Ikonographie für schnelle Erkennung',
+        'Minimalistisches Design mit Fokus auf wesentliche Informationen und Bedienelemente',
+        
       ],
       keyFeatures: [
         { title: 'Menüleiste', description: 'Einfach während der Fahrt zu bedienen, zeigt an, wo du dich befindest und was du tun kannst.' },
@@ -513,11 +511,11 @@ export const projects = {
         author: 'Max Mustermann',
         role: 'CPO, FinFlow Technologies',
       },*/
-      learnings: [
+      /*learnings: [
         '-',
         '-',
         '-',
-      ],
+      ],*/
       gallery: [
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Automotive/Persona.png', caption: 'Persona - Basierend auf Ergebnissen von Interviews' },
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Automotive/User%20Journey.png?updatedAt=1776700462553', caption: 'User Journey' },
