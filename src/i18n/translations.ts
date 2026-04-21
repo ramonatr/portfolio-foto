@@ -84,11 +84,11 @@ const en: Translations = {
         icon: '🎨',
       },
       {
-        title: 'Interaction Design',
-        description: 'Crafting meaningful micro-interactions and animations that enhance the user experience and delight users.',
+        title: 'Prototyping & Interaction Design',
+        description: 'Crafting meaningful micro-interactions and animations that enhance the user experience and delight users. From low-fidelity wireframes to high-fidelity interactive prototypes using Figma, Sketch, and Adobe XD.',
         icon: '✨',
       },
-      {
+      /*{
         title: 'Prototyping',
         description: 'From low-fidelity wireframes to high-fidelity interactive prototypes using Figma, Sketch, and Adobe XD.',
         icon: '📐',
@@ -102,7 +102,7 @@ const en: Translations = {
         title: 'Strategy & Workshop',
         description: 'Facilitating design thinking workshops, stakeholder alignment sessions, and product strategy development.',
         icon: '💡',
-      },
+      },*/
     ],
   },
   projects: {
@@ -167,25 +167,25 @@ const de: Translations = {
         icon: '🎨',
       },
       {
-        title: 'Interaction Design',
-        description: 'Bedeutungsvolle Micro-Interactions und Animationen, die das Nutzererlebnis bereichern und begeistern.',
+        title: 'Prototyping & Interaction Design',
+        description: 'Entwicklung aussagekräftiger Mikrointeraktionen und Animationen, die das Nutzererlebnis verbessern und die Nutzer begeistern. Von Low-Fidelity-Wireframes bis hin zu interaktiven High-Fidelity-Prototypen unter Verwendung von Figma, Sketch und Adobe XD.',
         icon: '✨',
       },
-      {
+      /*{
         title: 'Prototyping',
-        description: 'Von Low-Fidelity Wireframes bis hin zu interaktiven High-Fidelity Prototypen mit Figma, Sketch und Adobe XD.',
+        description: 'From low-fidelity wireframes to high-fidelity interactive prototypes using Figma, Sketch, and Adobe XD.',
         icon: '📐',
       },
       {
-        title: 'Design Systeme',
-        description: 'Aufbau skalierbarer, konsistenter Komponentenbibliotheken und Design Tokens für mehr Teamproduktivität.',
+        title: 'Design Systems',
+        description: 'Building scalable, consistent component libraries and design tokens that accelerate team productivity.',
         icon: '🧩',
       },
       {
-        title: 'Strategie & Workshops',
-        description: 'Moderation von Design Thinking Workshops, Stakeholder-Alignment und Produktstrategieentwicklung.',
+        title: 'Strategy & Workshop',
+        description: 'Facilitating design thinking workshops, stakeholder alignment sessions, and product strategy development.',
         icon: '💡',
-      },
+      },*/
     ],
   },
   projects: {
