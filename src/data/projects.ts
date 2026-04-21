@@ -334,9 +334,9 @@ export const projects = {
         '-',
       ],
       gallery: [
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Kolumbien%20Website.png?updatedAt=1776763260303', caption: 'Header Page, Bogotá and Arts & Crafts' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Kolumbien%20Website%20copy.png?updatedAt=1776763262509', caption: 'Nature & Landscape, Hisotrical Places and Traditions & Festivals' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Kolumbien%20Website%20copy%202.png?updatedAt=1776763259551', caption: 'Music & Dance, Culinary and Impressum' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Kolumbien%20Website.png', caption: 'Header Page, Bogotá and Arts & Crafts' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Kolumbien%20Website%20copy.png', caption: 'Nature & Landscape, Hisotrical Places and Traditions & Festivals' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Kolumbien%20Website%20copy%202.png', caption: 'Music & Dance, Culinary and Impressum' },
       ],
       nextProject: 'photoportfolio',
     },
