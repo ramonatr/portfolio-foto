@@ -10,6 +10,7 @@ const SOFTWARE = [
   'Miro',
   'Notion',
   'Framer',
+  'Houdini FX',
 ];
 
 const LANGUAGES = [
