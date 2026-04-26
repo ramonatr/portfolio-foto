@@ -11,6 +11,7 @@ const SOFTWARE = [
   'Notion',
   'Framer',
   'Houdini FX',
+  'Microsoft Office',
 ];
 
 const LANGUAGES = [
