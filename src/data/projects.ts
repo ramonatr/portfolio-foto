@@ -195,61 +195,61 @@ export const projects = {
       team: '3 UI designers',
       client: 'Technische Hochschule Ingolstadt',
       tools: ['Figma', 'Miro', 'Photoshop'],
-      challenge: '-',
+      challenge: 'Create a calming safe space for people that struggle with anxiety and attacks. The app should encourage self-care practices and act like an escape from the overwhelming reality. ',
       challengeDetails: [
-        '-',
-        '-',
-        '-',
-        '-',
-        '-',
-      ],
-      researchInsights: [
-        '-',
-        '-',
-        '-',
-        '-',
-        '-',
-      ],
-      process: [
-        { title: 'Research', description: '-', icon: '🔍' },
-        { title: 'Paper Prototyping', description: '-', icon: '✏️' },
-        { title: 'User Testing', description: '-', icon: '👥' },
-        { title: 'Wireframing', description: '-', icon: '🖇️' },
-        { title: 'Design', description: '', icon: '🖥️' },
+        'Easy and inutive to use and navigate so the userer doesn\'t get overwhelmed from the app itself',
+        'Calming colortheme and design that creates a safe space for the users',
+        'Little task that distract the user from their anxiety and attacks and help them to relax',
+        'Encourage self-care practices and promote mental wellness through interactive elements',
         
       ],
-      solution: '--What we designed--',
+      researchInsights: [
+        'The most stressful things in day-to-day life include uni, work and fears about life and future and also a lack of time for yourself',
+        'Anxiety/panic attacks are very common in the users environment or they have experienced them themselves',
+        'A lot of users show physical signs of anxiety and panic attacks, such as fidgeting, sweating and a biting nails',
+        'Communicating about feelings is difficult for a lot of users, but they also want to talk about it and share their feelings with others',
+        
+      ],
+      process: [
+        { title: 'Research', description: 'Creating a survey for people in the target group to detect their needs and pain points.', icon: '🔍' },
+        { title: 'Paper Prototyping', description: 'Developing low-fidelity prototypes to visualize the layout and structure.', icon: '✏️' },
+        { title: 'User Testing', description: 'Conducting tests with real users to gather feedback and identify issues.', icon: '👥' },
+        { title: 'Wireframing', description: 'Creating low-fidelity wireframes to visualize the layout and structure.', icon: '🖇️' },
+        { title: 'Design', description: 'Developing high-fidelity designs with a focus on detail and user experience.', icon: '🖥️' },
+        
+      ],
+      solution: 'An app that acts like a comfort room and a safe space for people that struggle with anxiety and panic attacks. The app encourages self-care practices and promotes mental wellness through interactive elements such as a breathing screen, a journal and a plant that grows when you drink water.',
       solutionDetails: [
-        '',
-        '',
-        '',
-        '',
-        '',
+        'Interactive Room that gets the user to all the self-care tasks by clicking on the different elements in the room',
+        'Watering Plants feature that encourages users to take care of their virtual plants as a form of self-care',
+        'Journaling feature that allows users to express their thoughts and feelings in a safe space',
+        'Breathing Screen feature that guides users through breathing exercises to help manage anxiety',
+        'Plant Growth feature that provides a sense of accomplishment and motivation as users stay hydrated',
       ],
       keyFeatures: [
-        { title: 'Interactive Main Room', description: '-' },
-        { title: 'Watering Plants', description: '-' },
-        { title: 'Journaling', description: '-' },
-        { title: 'Breathing Screen', description: '-' },
+        { title: 'Interactive Main Room', description: 'A central space where users can access all self-care features.' },
+        { title: 'Watering Plants', description: 'Encourages users to take care of their virtual plants as a form of self-care.' },
+        { title: 'Journaling', description: 'Allows users to express their thoughts and feelings in a safe space.' },
+        { title: 'Breathing Screen', description: 'Guides users through breathing exercises to help manage anxiety.' },
       ],
-      results: [
+      /*results: [
         '-',
         '-',
         '-',
         '-',
         '-',
         '-',
-      ],
+      ],*/
       /*testimonial: {
         quote: 'The redesign paid for itself within 6 weeks. Ramona\'s data-driven approach meant we weren\'t guessing — every design decision was backed by evidence.',
         author: 'Elena Richter',
         role: 'Head of E-Commerce, ShopScape',
       },*/
-      learnings: [
+      /*learnings: [
         '-',
         '-',
         '-',
-      ],
+      ],*/
       gallery: [
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/MindNest/paper%20prototyping%20.jpg', caption: 'Paper Prototype — ' },
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/MindNest/Screenshot%202026-03-19%20at%2010.01.42.png', caption: 'Paper Prototype — ' },
@@ -535,60 +535,60 @@ export const projects = {
       team: '3 UI Designer',
       client: 'Technische Hochschule Ingolstadt',
       tools: ['Figma', 'Miro', 'Photoshop'],
-      challenge: '-',
+      challenge: 'Entwickle eine App, die jüngere Menschen in ihrem mentalen Wohlbefinden unterstützt, indem sie einen sicheren und beruhigenden digitalen Raum schafft, der Selbstfürsorgepraktiken fördert und das mentale Wohlbefinden unterstützt. Das Design sollte eine beruhigende Farbpalette, intuitive Navigation und interaktive Elemente umfassen, die Entspannung und Achtsamkeit fördern.',
       challengeDetails: [
-        '-',
-        '-',
-        '-',
-        '-',
-        '-',
+        'Einfach und intuitiv zu bedienen und zu navigieren, damit der Nutzer nicht von der App selbst überfordert wird',
+        'Ein beruhigendes Farbschema und Design, das den Nutzern einen Ort der Geborgenheit bietet',
+        'Kleine Aufgaben, die den Nutzer von seinen Ängsten und Anfällen ablenken und ihm helfen, sich zu entspannen',
+        'Fördern Sie Selbstfürsorgepraktiken und stärken Sie das psychische Wohlbefinden durch interaktive Elemente',
+        
       ],
       researchInsights: [
-        '-',
-        '-',
-        '-',
-        '',
-        '-',
+        'Zu den stressigsten Dingen im Alltag gehören das Studium, die Arbeit und Ängste in Bezug auf das Leben und die Zukunft sowie ein Mangel an Zeit für sich selbst',
+        'Angstzustände oder Panikattacken kommen im Umfeld der Nutzer sehr häufig vor, oder sie haben sie selbst schon erlebt',
+        'Viele Nutzer zeigen körperliche Anzeichen von Angstzuständen und Panikattacken, wie z. B. Zappeln, Schwitzen und Nägelkauen',
+        'Für viele Nutzer ist es schwierig, über Gefühle zu sprechen, aber sie möchten dennoch darüber reden und ihre Gefühle mit anderen teilen',
+        
       ],
       process: [
-        { title: 'Research', description: '-', icon: '🔍' },
-        { title: 'Paper Prototyping', description: '-', icon: '✏️' },
-        { title: 'User Testing', description: '-', icon: '👥' },
-        { title: 'Wireframing', description: '-', icon: '🖇️' },
-        { title: 'Design', description: '-', icon: '🖥️' },
+        { title: 'Research', description: 'Erstellen einer Umfrage für Personen der Zielgruppe um ihre Bedürfnisse und Herausforderungen zu verstehen.', icon: '🔍' },
+        { title: 'Paper Prototyping', description: 'Entwicklung von Papier-Prototypen zur Visualisierung der Ideen.', icon: '✏️' },
+        { title: 'User Testing', description: 'Durchführung von Tests mit realen Nutzern, um Feedback zu sammeln.', icon: '👥' },
+        { title: 'Wireframing', description: 'Erstellung von Wireframes zur Strukturierung der Benutzeroberfläche.', icon: '🖇️' },
+        { title: 'Design', description: 'Entwicklung des endgültigen Designs unter Berücksichtigung aller Feedbackpunkte.', icon: '🖥️' },
       ],
-      solution: '--Was wir gestaltet haben--',
+      solution: 'Eine App, die einen sicheren und beruhigenden digitalen Raum schafft, um jüngere Menschen in ihrem mentalen Wohlbefinden zu unterstützen. Das Design umfasst eine beruhigende Farbpalette, intuitive Navigation und interaktive Elemente, die Entspannung und Achtsamkeit fördern.',
       solutionDetails: [
-        '-',
-        '-',
-        '-',
-        '-',
-        '-',
+        'Ein interaktiver Raum, der den Nutzer durch Anklicken der verschiedenen Elemente im Raum zu allen Self-Care Aufgaben führt',
+        'Die Funktion „Pflanzen gießen“, die Nutzer dazu anregt, sich um ihre virtuellen Pflanzen zu kümmern, um sich selbst etwas Gutes zu tun',
+        'Eine Tagebuchfunktion, mit der Nutzer ihre Gedanken und Gefühle in einem geschützten Raum zum Ausdruck bringen können',
+        'Die Funktion „Atemübung“ führt die Nutzer durch Atemübungen, die beim Umgang mit Angstzuständen helfen',
+        'Die Funktion „Pflanzenwachstum“, die den Nutzern ein Erfolgserlebnis und Motivation vermittelt, während sie ausreichend Flüssigkeit zu sich nehmen',
       ],
       keyFeatures: [
-        { title: 'Interaktiver Raum', description: '-' },
-        { title: 'Pflanzen gießen', description: '-' },
-        { title: 'Journal führen', description: '-' },
-        { title: 'Atmungstraining', description: '-' },
+        { title: 'Interaktiver Raum', description: 'Ein zentraler Bereich, in dem Nutzer auf alle Funktionen zur Self-Care zugreifen können.' },
+        { title: 'Pflanzen gießen', description: 'Ermutigt die Nutzer, sich um ihre virtuellen Pflanzen zu kümmern, um sich selbst etwas Gutes zu tun.' },
+        { title: 'Journal führen', description: 'Ermöglicht es den Nutzern, ihre Gedanken und Gefühle in einem sicheren Umfeld auszudrücken.' },
+        { title: 'Atmungstraining', description: 'Führt die Nutzer durch Atemübungen, die beim Umgang mit Angstzuständen helfen.' },
       ],
-      results: [
+      /*results: [
         '-',
         '-',
         '-',
         '-',
         '-',
         '-',
-      ],
+      ],*/
       /*testimonial: {
         quote: 'Zum ersten Mal in meinem Leben kann ich einen Arzttermin komplett eigenständig buchen. Diese Plattform behandelt mich wie einen Menschen, nicht wie ein Problem.',
         author: 'Sarah K.',
         role: 'Patientin & Accessibility-Befürworterin',
       },*/
-      learnings: [
+      /*learnings: [
         '-',
         '-',
         '-',
-      ],
+      ],*/
       gallery: [
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/MindNest/paper%20prototyping%20.jpg', caption: 'Paper Prototype — ' },
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/MindNest/Screenshot%202026-03-19%20at%2010.01.42.png', caption: 'Paper Prototype — ' },
