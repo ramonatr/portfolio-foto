@@ -58,7 +58,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
       year: '2026',
       overview: 'A photography portfolio showcasing coursework from the Digital Photography program at Technische Hochschule Ingolstadt. This project demonstrates mastery of composition, lighting, and visual storytelling across multiple photographic genres.',
       role: 'Ramona',
-      duration: '1 semester',
+      duration: '1 Semester',
       team: '1 Photographer · Instructor guidance',
       client: 'Technische Hochschule Ingolstadt',
       tools: ['Camera', 'Adobe Lightroom', 'Adobe Photoshop', 'Portfolio Website'],
@@ -390,6 +390,86 @@ export const projects: Record<'en' | 'de', Project[]> = {
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Screenshot%202026-04-21%20at%2014.42.16.png', caption: 'Traditions & Festivals' },
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Screenshot%202026-04-21%20at%2014.42.36.png', caption: 'Music & Dance' },
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Colombia/Screenshot%202026-04-21%20at%2014.43.15.png', caption: 'Culinary' },
+      ],
+      nextProject: 'SafetyFirst',
+    },
+    {
+      id: 'SafetyFirst',
+      title: 'App — Safety First Shuttle',
+      category: 'App and Screen Design · University Project',
+      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Free%20Rock%20iPhone%2015%20Pro%20Mockup%20(Mockuuups%20Studio)%20Large.jpeg',
+      color: '#FFB347',
+      year: '2026',
+      overview: '-',
+      /*role: 'UI Designer',*/
+      duration: '1 Semester',
+      team: '4 UI Designer',
+      client: 'Technische Hochschule Ingolstadt',
+      tools: ['Figma, Miro'],
+      link: { url: 'https://www.figma.com/design/PRgaymShMYIp7lhqu9x9XX/Safety-First-Shuttle?node-id=0-1&t=IdCA2BpR58tev7w5-1', label: 'View Prototype' },
+      challenge: 'Create an app and concept for a shuttle service that provides a safe and reliable transportation option, especially for women.',
+      challengeDetails: [
+        'Target group: People, especially women, that want to get home safely day and night and want to use a shuttle service for that instead of public transport',
+        'Concept of the shuttle itself and its layout',
+        'App that allows users to book a shuttle, track its location, and access safety features',
+        'Conduct research to understand the needs and pain points of the target audience, and use that information to inform the design of the app and shuttle service',
+      
+      ],
+      researchInsights: [
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+      ],
+      process: [
+        { title: 'Brainstorming & Research', description: '', icon: '🔍' },
+        { title: 'Interviews', description: '-', icon: '✏️' },
+        { title: 'Prototyping', description: '-', icon: '🖇️' },
+        { title: 'User Testing', description: '-', icon: '👥' },
+        { title: 'Design', description: '-', icon: '🖥️' },
+        
+      ],
+      solution: 'An app that allows users to book a shuttle, reserve a seat, have the option of a SOS button and a shuttle service that provides a safe and reliable transportation option.',
+      solutionDetails: [
+        'Easy in-app booking and seat reservation process for users to quickly and conveniently book a shuttle ride',
+        'Information Screen inside the shuttle that provides the route and other relevant information to passengers',
+        'An on-seat screen that allows passengers to access shuttle information and emergency options during their ride',
+        
+      ],
+      keyFeatures: [
+        { title: 'Shuttle Information Screen', description: '-' },
+        { title: 'On-Seat Screen', description: '-' },
+        { title: 'App', description: '-' },
+        
+      ],
+      results: [
+        '-',
+        '-',
+        '-',
+        
+      ],
+      /*testimonial: {
+        quote: 'Ramona didn\'t just design an app — they designed a learning experience. The gamification feels natural, not gimmicky, and the micro-learning approach has genuinely changed how I study.',
+        author: 'Dr. Thomas Hoffmann',
+        role: 'Dean of Digital Learning, TechAcademy',
+      },*/
+      /*learnings: [
+        '-',
+        '-',
+        '-',
+      ],*/
+      gallery: [
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/iPhone%2016%20-%201.jpg', caption: 'App - Booking' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/iPhone%2016%20-%201.jpg', caption: 'App - Seat Log-In' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Big%20Screen%202.jpg', caption: 'Shuttle Information Screen' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Small%20Screen%203.jpg', caption: 'On-Seat Screen - Overview' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Small%20Screen%202.jpg', caption: 'On-Seat Screen - Seat Log-In' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image-3.png', caption: 'Sketches Shuttle Concept' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image.png', caption: 'Persona Safety Shuttle' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image-2.png', caption: 'Persona App' },
+
+        
       ],
       nextProject: 'photoportfolio',
     },
