@@ -6,7 +6,48 @@ export interface ProcessStep {
   icon?: string;
 }
 
-export const projects = {
+export interface ProjectLink {
+  url: string;
+  label?: string;
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  category: string;
+  thumbnail: string;
+  color: string;
+  year: string;
+  overview: string;
+  role?: string;
+  duration: string;
+  team: string;
+  client?: string;
+  tools: string[];
+  challenge?: string;
+  challengeDetails?: string[];
+  researchInsights?: string[];
+  process?: ProcessStep[];
+  solution?: string;
+  solutionDetails?: string[];
+  keyFeatures?: { title: string; description: string }[];
+  results?: string[];
+  testimonial?: {
+    quote: string;
+    author: string;
+    role: string;
+  };
+  learnings?: string[];
+  gallery?: { src: string; caption: string }[];
+  galleryWithCategories?: {
+    categories: string[];
+    images: { src: string; caption: string; category: string }[];
+  };
+  nextProject?: string;
+  link?: ProjectLink;
+}
+
+export const projects: Record<'en' | 'de', Project[]> = {
   en: [
     {
       id: 'photoportfolio',
@@ -53,17 +94,17 @@ export const projects = {
       ],
       keyFeatures: [
         { title: 'Shutterspeed Collection', description: 'Capturing light and movement with the help of long and short exposures to freeze moments in time and convey motion.' },
-        { title: 'Portrait Series', description: 'Shooting portraits by using different forms of lighting and composition to highlight subject characteristics.' },
         { title: 'Street Photography', description: 'Snapshots of everyday life that document culture and life in urban settings.' },
+        { title: 'Final Project: Paint with the Camera', description: 'A comprehensive project that combines various photographic techniques to create a unique visual narrative.' },
         
       ],
-      results: [
+      /*results: [
         'Completed 30+ exhibition-quality photographs across three genres',
         'Developed personal photographic style and visual voice',
         'Mastered technical skills: exposure, composition, color grading',
         'Created shareable portfolio suitable for exhibitions or freelance opportunities',
         'Received positive feedback from instructors and peers',
-      ],
+      ],*/
       testimonial: {
         quote: 'The growth from first shoot to final portfolio was remarkable. The technical skills are evident, but what impressed me most was the development of Ramona\'s artistic voice and creative vision.',
         author: 'Photography Instructor',
@@ -76,9 +117,9 @@ export const projects = {
       ],
       gallery: [],
       galleryWithCategories: {
-        categories: ['Shutterspeed Photography', 'Portrait Photography', 'Street Photography'],
+        categories: ['Street Photography', 'Final Asignment - Paint with the Camera'],
         images: [
-          // Shutter PHOTOGRAPHY
+          /*// Shutter PHOTOGRAPHY
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5181.jpg', caption: 'Long exposure with car driving by - Nr. 1', category: 'Shutterspeed Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5182.jpg', caption: 'Long exposure with car driving by - Nr. 2', category: 'Shutterspeed Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5197.jpg', caption: 'Long exposure with car driving by - Nr. 3', category: 'Shutterspeed Photography' },
@@ -91,14 +132,7 @@ export const projects = {
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5094.jpg', caption: 'Long exposure with camera movement - Nr. 2', category: 'Shutterspeed Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5078.jpg', caption: 'Long exposure with camera movement - Nr. 3', category: 'Shutterspeed Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5076.jpg', caption: 'Long exposure with camera movement - Nr. 4', category: 'Shutterspeed Photography' },
-          // Portrait PHOTOGRAPHY
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Portrait/IMG_5394.jpg', caption: 'Creative Portrait - Nr. 1', category: 'Portrait Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Portrait/IMG_5343.jpg', caption: 'Creative Portrait - Nr. 2', category: 'Portrait Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Portrait/IMG_5386.jpg', caption: 'Creative Portrait - Nr. 3', category: 'Portrait Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Portrait/IMG_5354.jpg', caption: 'Creative Portrait - Nr. 4', category: 'Portrait Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Portrait/IMG_5355.jpg', caption: 'Creative Portrait - Nr. 5', category: 'Portrait Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Portrait/IMG_5357.jpg', caption: 'Creative Portrait - Nr. 6', category: 'Portrait Photography' },
-          // Street PHOTOGRAPHY
+          */// Street PHOTOGRAPHY
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_A01.jpg', caption: 'People - Nr. 1', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_A02.jpg', caption: 'People - Nr. 2', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_A03.jpg', caption: 'People - Nr. 3', category: 'Street Photography' },
@@ -109,6 +143,13 @@ export const projects = {
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_C01.jpg', caption: 'Street - Nr. 1', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_C02.jpg', caption: 'Street - Nr. 2', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_C03.jpg?updatedAt=1778233033106', caption: 'Street - Nr. 3', category: 'Street Photography' },
+          // Final Asignment - Paint with the Camera
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_06.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 1', category: 'Final Asignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_07.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 2', category: 'Final Asignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_10.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 3', category: 'Final Asignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_02.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 4', category: 'Final Asignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_03.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 5', category: 'Final Asignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_05.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 6', category: 'Final Asignment - Paint with the Camera' },
         ],
       },
       nextProject: 'AutomotiveUX',
@@ -124,8 +165,9 @@ export const projects = {
       role: 'UI Designer',
       duration: '1 months',
       team: '1 UI Designer',
-      client: '-',
+      /*client: '',*/
       tools: ['Figma'],
+      link: { url: 'https://www.figma.com/proto/fB1p8iERls5tHZxVkBJjx3/Automotive-UX?node-id=20-242&viewport=196%2C-210%2C0.19&t=PXmcndFLTJhby3LB-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=20%3A242&page-id=0%3A1', label: 'View Prototype' },
       challenge: 'Create an intuitive and visually appealing car interface that enhances driver safety and user experience while minimizing distraction. The design needed to balance functionality with aesthetics, providing quick access to critical information and controls without overwhelming the driver.',
       challengeDetails: [
         'Create an interface that doesn\'t confuse or distract the driver',
@@ -191,11 +233,12 @@ export const projects = {
       color: '#FF6B6B',
       year: '2025',
       overview: 'In this project the assignment was to create an app that supports younger people in their mental health wellbeing. The design focuses on creating a safe and calming digital space that encourages self-care practices and promotes mental wellness. The app features a soothing color palette, intuitive navigation, and interactive elements that foster relaxation and mindfulness.',
-      role: 'UI Designer',
+      /*role: 'UI Designer',*/
       duration: '4 months',
       team: '3 UI designers',
       client: 'Technische Hochschule Ingolstadt',
       tools: ['Figma', 'Miro', 'Photoshop'],
+      link: { url: 'https://www.figma.com/proto/UI5s9QJCdH48uLWzN0gABO/MindNest-Screens-Version-Final?node-id=1-69&p=f&viewport=378%2C-511%2C0.26&t=gzKDQ3Bw0xAaSPLp-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A69&show-proto-sidebar=1&page-id=0%3A1', label: 'View Prototype' },
       challenge: 'Create a calming safe space for people that struggle with anxiety and attacks. The app should encourage self-care practices and act like an escape from the overwhelming reality. ',
       challengeDetails: [
         'Easy and inutive to use and navigate so the userer doesn\'t get overwhelmed from the app itself',
@@ -279,11 +322,12 @@ export const projects = {
       color: '#FFB347',
       year: '2024',
       overview: 'The whole theme of the semester was all about Colombia. The task here was to create a website about all the things we found in research. The website serves as an engaging digital guide that highlights the country\'s unique attractions, cultural heritage, and travel tips for visitors.',
-      role: 'UI Designer',
+      /*role: 'UI Designer',*/
       duration: '1 months',
       team: '1 UI Designer',
       client: 'Technische Hochschule Ingolstadt',
       tools: ['Figma'],
+      link: { url: 'https://www.figma.com/proto/teCtHk2Wxe3tBtaJtFk3JR/Kolumbien?node-id=1-2&viewport=586%2C114%2C0.1&t=rYegFmjYGhmzMsZK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1', label: 'View Prototype' },
       challenge: 'Create an engaging and informative website about Colombia that effectively showcases the country\'s unique attractions, cultural heritage, and travel tips for visitors. The design needed to be visually appealing while providing a seamless user experience that encourages exploration and discovery.',
       challengeDetails: [
         'Target group: Travelers and tourists, that want to visit Colombia; Students and people interested in education, that want to learn more about Colombian culture and history; Local Colombians who value and want to share their cultural heritage',
@@ -350,6 +394,7 @@ export const projects = {
       nextProject: 'photoportfolio',
     },
   ],
+  
   de: [
     {
       id: 'photoportfolio',

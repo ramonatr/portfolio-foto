@@ -67,12 +67,14 @@ export default function Navbar() {
             >
               EN
             </button>
+            {/*
             <button
               className={`lang-switch__btn${language === 'de' ? ' lang-switch__btn--active' : ''}`}
               onClick={() => setLanguage('de')}
             >
               DE
             </button>
+            */}
           </div>
         </li>
       </ul>

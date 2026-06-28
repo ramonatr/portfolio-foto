@@ -30,6 +30,8 @@ export interface Translations {
     overview: string;
     role: string;
     duration: string;
+    client: string;
+    link: string;
     tools: string;
     challenge: string;
     solution: string;
@@ -113,6 +115,8 @@ const en: Translations = {
     overview: 'Overview',
     role: 'Role',
     duration: 'Duration',
+    client: 'Client',
+    link: 'Link',
     tools: 'Tools',
     challenge: 'The Challenge',
     solution: 'The Solution',
@@ -196,6 +200,8 @@ const de: Translations = {
     overview: 'Überblick',
     role: 'Rolle',
     duration: 'Dauer',
+    client: 'Kunde',
+    link: 'Link',
     tools: 'Tools',
     challenge: 'Die Herausforderung',
     solution: 'Die Lösung',

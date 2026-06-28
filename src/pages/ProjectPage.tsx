@@ -65,9 +65,19 @@ export default function ProjectPage() {
               <p>{project.duration}</p>
             </div>
             <div className="project-detail__meta-item">
-              <h4>Client</h4>
+              <h4>{t.projects.client}</h4>
               <p>{project.client}</p>
             </div>
+            {project.link && (
+              <div className="project-detail__meta-item">
+                <h4>{t.projects.link}</h4>
+                <p>
+                  <a href={project.link.url} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                    {project.link.label || project.link.url}
+                  </a>
+                </p>
+              </div>
+            )}
             <div className="project-detail__meta-item">
               <h4>{t.projects.tools}</h4>
               <p>{project.tools.join(', ')}</p>
@@ -218,18 +228,32 @@ export default function ProjectPage() {
 
         {/* Metadata */}
         <div className="project-detail__meta">
+          {project.role && (
           <div className="project-detail__meta-item">
             <h4>{t.projects.role}</h4>
             <p>{project.role}</p>
           </div>
+          )}
           <div className="project-detail__meta-item">
             <h4>{t.projects.duration}</h4>
             <p>{project.duration}</p>
           </div>
+          {project.client && (
           <div className="project-detail__meta-item">
-            <h4>Client</h4>
+            <h4>{t.projects.client}</h4>
             <p>{project.client}</p>
           </div>
+          )}
+          {project.link && (
+            <div className="project-detail__meta-item">
+              <h4>{t.projects.link}</h4>
+              <p>
+                <a href={project.link.url} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                  {project.link.label || project.link.url}
+                </a>
+              </p>
+            </div>
+          )}
           <div className="project-detail__meta-item">
             <h4>{t.projects.tools}</h4>
             <p>{project.tools.join(', ')}</p>
