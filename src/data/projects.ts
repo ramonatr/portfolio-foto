@@ -423,11 +423,11 @@ export const projects: Record<'en' | 'de', Project[]> = {
         '-',
       ],
       process: [
-        { title: 'Brainstorming & Research', description: '', icon: '🔍' },
-        { title: 'Interviews', description: '-', icon: '✏️' },
-        { title: 'Prototyping', description: '-', icon: '🖇️' },
-        { title: 'User Testing', description: '-', icon: '👥' },
-        { title: 'Design', description: '-', icon: '🖥️' },
+        { title: 'Brainstorming & Research', description: 'Exploring ideas about shuttle services and potential features and use cases.', icon: '🔍' },
+        { title: 'Interviews', description: 'Conducting interviews with potential users to gather insights and feedback.', icon: '✏️' },
+        { title: 'Prototyping', description: 'Creating low-fidelity prototypes to visualize and test ideas.', icon: '🖇️' },
+        { title: 'User Testing', description: 'Testing prototypes with real users to identify pain points and areas for improvement.', icon: '👥' },
+        { title: 'Design', description: 'Finalizing the design based on user feedback and testing results.', icon: '🖥️' },
         
       ],
       solution: 'An app that allows users to book a shuttle, reserve a seat, have the option of a SOS button and a shuttle service that provides a safe and reliable transportation option.',
@@ -438,17 +438,17 @@ export const projects: Record<'en' | 'de', Project[]> = {
         
       ],
       keyFeatures: [
-        { title: 'Shuttle Information Screen', description: '-' },
-        { title: 'On-Seat Screen', description: '-' },
-        { title: 'App', description: '-' },
+        { title: 'Shuttle Information Screen', description: 'Route, weather, time and next stop all in one place.' },
+        { title: 'On-Seat Screen', description: 'Log-In in seat reservation, SOS-Button, next stop and more relevant information.' },
+        { title: 'App', description: 'Booking and seat reservation functionality.' },
         
       ],
-      results: [
+      /*results: [
         '-',
         '-',
         '-',
         
-      ],
+      ],*/
       /*testimonial: {
         quote: 'Ramona didn\'t just design an app — they designed a learning experience. The gamification feels natural, not gimmicky, and the micro-learning approach has genuinely changed how I study.',
         author: 'Dr. Thomas Hoffmann',
