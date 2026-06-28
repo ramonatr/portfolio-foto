@@ -50,6 +50,86 @@ export interface Project {
 export const projects: Record<'en' | 'de', Project[]> = {
   en: [
     {
+      id: 'SafetyFirst',
+      title: 'App — Safety First Shuttle',
+      category: 'App and Screen Design · University Project',
+      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Free%20Rock%20iPhone%2015%20Pro%20Mockup%20(Mockuuups%20Studio)%20Large.jpeg',
+      color: '#FFB347',
+      year: '2026',
+      overview: 'A project focused on designing an app and concept for a shuttle service that prioritizes safety, particularly for women. The project was done as group throughout the whole semester and included research, ideation, prototyping, and user testing to create a comprehensive solution that addresses the needs of the target audience.',
+      /*role: 'UI Designer',*/
+      duration: '1 Semester',
+      team: '4 UI Designer',
+      client: 'Technische Hochschule Ingolstadt',
+      tools: ['Figma, Miro'],
+      link: { url: 'https://www.figma.com/design/PRgaymShMYIp7lhqu9x9XX/Safety-First-Shuttle?node-id=0-1&t=IdCA2BpR58tev7w5-1', label: 'View Prototype' },
+      challenge: 'Create an app and concept for a shuttle service that provides a safe and reliable transportation option, especially for women.',
+      challengeDetails: [
+        'Target group: People, especially women, that want to get home safely day and night and want to use a shuttle service for that instead of public transport',
+        'Concept of the shuttle itself and its layout',
+        'App that allows users to book a shuttle, track its location, and access safety features',
+        'Conduct research to understand the needs and pain points of the target audience, and use that information to inform the design of the app and shuttle service',
+      
+      ],
+      researchInsights: [
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+      ],
+      process: [
+        { title: 'Brainstorming & Research', description: 'Exploring ideas about shuttle services and potential features and use cases.', icon: '🔍' },
+        { title: 'Interviews', description: 'Conducting interviews with potential users to gather insights and feedback.', icon: '✏️' },
+        { title: 'Prototyping', description: 'Creating low-fidelity prototypes to visualize and test ideas.', icon: '🖇️' },
+        { title: 'User Testing', description: 'Testing prototypes with real users to identify pain points and areas for improvement.', icon: '👥' },
+        { title: 'Design', description: 'Finalizing the design based on user feedback and testing results.', icon: '🖥️' },
+        
+      ],
+      solution: 'An app that allows users to book a shuttle, reserve a seat, have the option of a SOS button and a shuttle service that provides a safe and reliable transportation option.',
+      solutionDetails: [
+        'Easy in-app booking and seat reservation process for users to quickly and conveniently book a shuttle ride',
+        'Information Screen inside the shuttle that provides the route and other relevant information to passengers',
+        'An on-seat screen that allows passengers to access shuttle information and emergency options during their ride',
+        
+      ],
+      keyFeatures: [
+        { title: 'Shuttle Information Screen', description: 'Route, weather, time and next stop all in one place.' },
+        { title: 'On-Seat Screen', description: 'Log-In in seat reservation, SOS-Button, next stop and more relevant information.' },
+        { title: 'App', description: 'Booking and seat reservation functionality.' },
+        
+      ],
+      /*results: [
+        '-',
+        '-',
+        '-',
+        
+      ],*/
+      /*testimonial: {
+        quote: 'Ramona didn\'t just design an app — they designed a learning experience. The gamification feels natural, not gimmicky, and the micro-learning approach has genuinely changed how I study.',
+        author: 'Dr. Thomas Hoffmann',
+        role: 'Dean of Digital Learning, TechAcademy',
+      },*/
+      /*learnings: [
+        '-',
+        '-',
+        '-',
+      ],*/
+      gallery: [
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/iPhone%2016%20-%201.jpg', caption: 'App - Booking' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/iPhone%2016%20-%201.jpg', caption: 'App - Seat Log-In' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Big%20Screen%202.jpg', caption: 'Shuttle Information Screen' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Small%20Screen%203.jpg', caption: 'On-Seat Screen - Overview' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Small%20Screen%202.jpg', caption: 'On-Seat Screen - Seat Log-In' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image-3.png', caption: 'Sketches Shuttle Concept' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image.png', caption: 'Persona Safety Shuttle' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image-2.png', caption: 'Persona App' },
+
+        
+      ],
+      nextProject: 'photoportfolio',
+    },
+    {
       id: 'photoportfolio',
       title: 'Digital Photography Course Portfolio',
       category: 'Photography · Portfolio',
@@ -393,86 +473,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
       ],
       nextProject: 'SafetyFirst',
     },
-    {
-      id: 'SafetyFirst',
-      title: 'App — Safety First Shuttle',
-      category: 'App and Screen Design · University Project',
-      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Free%20Rock%20iPhone%2015%20Pro%20Mockup%20(Mockuuups%20Studio)%20Large.jpeg',
-      color: '#FFB347',
-      year: '2026',
-      overview: 'A project focused on designing an app and concept for a shuttle service that prioritizes safety, particularly for women. The project was done as group throughout the whole semester and included research, ideation, prototyping, and user testing to create a comprehensive solution that addresses the needs of the target audience.',
-      /*role: 'UI Designer',*/
-      duration: '1 Semester',
-      team: '4 UI Designer',
-      client: 'Technische Hochschule Ingolstadt',
-      tools: ['Figma, Miro'],
-      link: { url: 'https://www.figma.com/design/PRgaymShMYIp7lhqu9x9XX/Safety-First-Shuttle?node-id=0-1&t=IdCA2BpR58tev7w5-1', label: 'View Prototype' },
-      challenge: 'Create an app and concept for a shuttle service that provides a safe and reliable transportation option, especially for women.',
-      challengeDetails: [
-        'Target group: People, especially women, that want to get home safely day and night and want to use a shuttle service for that instead of public transport',
-        'Concept of the shuttle itself and its layout',
-        'App that allows users to book a shuttle, track its location, and access safety features',
-        'Conduct research to understand the needs and pain points of the target audience, and use that information to inform the design of the app and shuttle service',
-      
-      ],
-      researchInsights: [
-        '-',
-        '-',
-        '-',
-        '-',
-        '-',
-      ],
-      process: [
-        { title: 'Brainstorming & Research', description: 'Exploring ideas about shuttle services and potential features and use cases.', icon: '🔍' },
-        { title: 'Interviews', description: 'Conducting interviews with potential users to gather insights and feedback.', icon: '✏️' },
-        { title: 'Prototyping', description: 'Creating low-fidelity prototypes to visualize and test ideas.', icon: '🖇️' },
-        { title: 'User Testing', description: 'Testing prototypes with real users to identify pain points and areas for improvement.', icon: '👥' },
-        { title: 'Design', description: 'Finalizing the design based on user feedback and testing results.', icon: '🖥️' },
-        
-      ],
-      solution: 'An app that allows users to book a shuttle, reserve a seat, have the option of a SOS button and a shuttle service that provides a safe and reliable transportation option.',
-      solutionDetails: [
-        'Easy in-app booking and seat reservation process for users to quickly and conveniently book a shuttle ride',
-        'Information Screen inside the shuttle that provides the route and other relevant information to passengers',
-        'An on-seat screen that allows passengers to access shuttle information and emergency options during their ride',
-        
-      ],
-      keyFeatures: [
-        { title: 'Shuttle Information Screen', description: 'Route, weather, time and next stop all in one place.' },
-        { title: 'On-Seat Screen', description: 'Log-In in seat reservation, SOS-Button, next stop and more relevant information.' },
-        { title: 'App', description: 'Booking and seat reservation functionality.' },
-        
-      ],
-      /*results: [
-        '-',
-        '-',
-        '-',
-        
-      ],*/
-      /*testimonial: {
-        quote: 'Ramona didn\'t just design an app — they designed a learning experience. The gamification feels natural, not gimmicky, and the micro-learning approach has genuinely changed how I study.',
-        author: 'Dr. Thomas Hoffmann',
-        role: 'Dean of Digital Learning, TechAcademy',
-      },*/
-      /*learnings: [
-        '-',
-        '-',
-        '-',
-      ],*/
-      gallery: [
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/iPhone%2016%20-%201.jpg', caption: 'App - Booking' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/iPhone%2016%20-%201.jpg', caption: 'App - Seat Log-In' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Big%20Screen%202.jpg', caption: 'Shuttle Information Screen' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Small%20Screen%203.jpg', caption: 'On-Seat Screen - Overview' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Small%20Screen%202.jpg', caption: 'On-Seat Screen - Seat Log-In' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image-3.png', caption: 'Sketches Shuttle Concept' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image.png', caption: 'Persona Safety Shuttle' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/image-2.png', caption: 'Persona App' },
-
-        
-      ],
-      nextProject: 'photoportfolio',
-    },
+    
   ],
   
   de: [
