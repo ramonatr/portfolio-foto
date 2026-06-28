@@ -400,7 +400,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
       thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Safety%20First/Free%20Rock%20iPhone%2015%20Pro%20Mockup%20(Mockuuups%20Studio)%20Large.jpeg',
       color: '#FFB347',
       year: '2026',
-      overview: '-',
+      overview: 'A project focused on designing an app and concept for a shuttle service that prioritizes safety, particularly for women. The project was done as group throughout the whole semester and included research, ideation, prototyping, and user testing to create a comprehensive solution that addresses the needs of the target audience.',
       /*role: 'UI Designer',*/
       duration: '1 Semester',
       team: '4 UI Designer',

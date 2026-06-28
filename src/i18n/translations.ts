@@ -82,12 +82,12 @@ const en: Translations = {
       },
       {
         title: 'UI Design',
-        description: 'Pixel-perfect interface design with a focus on visual hierarchy, typography, and cohesive design systems.',
+        description: 'I care about getting the details right — clean layouts, solid typography, and design systems that actually hold together across a whole product.',
         icon: '🎨',
       },
       {
         title: 'Prototyping & Interaction Design',
-        description: 'Crafting meaningful micro-interactions and animations that enhance the user experience and delight users. From low-fidelity wireframes to high-fidelity interactive prototypes using Figma, Sketch, and Adobe XD.',
+        description: 'I like getting the small details right, the little animations and interactions that make an interface feel good to use. I work through everything from rough wireframes to clickable prototypes in Figma.',
         icon: '✨',
       },
       /*{
