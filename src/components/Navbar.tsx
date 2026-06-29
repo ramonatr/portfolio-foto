@@ -1,24 +1,18 @@
 import { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
 
   const isHome = location.pathname === '/';
 
   const scrollTo = (id: string) => {
     setMenuOpen(false);
     if (!isHome) {
-      navigate('/');
-      // Warte kurz, bis die neue Seite gerendert ist, dann scrolle
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        el?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      window.location.href = `/#${id}`;
       return;
     }
     const el = document.getElementById(id);
