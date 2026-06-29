@@ -1,18 +1,24 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isHome = location.pathname === '/';
 
   const scrollTo = (id: string) => {
     setMenuOpen(false);
     if (!isHome) {
-      window.location.href = `/#${id}`;
+      navigate('/');
+      // Warte kurz, bis die neue Seite gerendert ist, dann scrolle
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        el?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
       return;
     }
     const el = document.getElementById(id);
@@ -59,6 +65,7 @@ export default function Navbar() {
             {t.nav.contact}
           </a>
         </li>
+        {/*
         <li>
           <div className="lang-switch">
             <button
@@ -67,16 +74,15 @@ export default function Navbar() {
             >
               EN
             </button>
-            {/*
             <button
               className={`lang-switch__btn${language === 'de' ? ' lang-switch__btn--active' : ''}`}
               onClick={() => setLanguage('de')}
             >
               DE
             </button>
-            */}
           </div>
         </li>
+        */}
       </ul>
     </nav>
   );
