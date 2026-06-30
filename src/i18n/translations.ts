@@ -66,10 +66,10 @@ const en: Translations = {
   about: {
     sectionTitle: 'About Me',
     description: [
-      'Hi and welcome to my Portfolio!!',
+      'Hi and welcome to my Portfolio!',
       'My name is Ramona, i\'m 23 years old and currently studying UXD in the 4th semester.',
-      'Outside of uni i really enjoy doing sports and going to the gym, besides that i recently started running as well.',
-      'Other interests of mine are of course being creative in many different ways, my love and excitement about cars and motorsports, which i got from my dad, and idealy a combination of both!',
+      'I believe great design starts with understanding people. As a UX Design student, I enjoy exploring user needs, asking questions, and transforming insights into thoughtful digital experiences. My work combines analytical thinking with creativity, and I love collaborating across disciplines to create products that are both functional and enjoyable to use.',
+      'I\'m currently looking for opportunities to grow as a UX designer and contribute to meaningful projects.',
     ],
   },
   skills: {
