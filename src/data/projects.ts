@@ -197,7 +197,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
       ],
       gallery: [],
       galleryWithCategories: {
-        categories: ['Street Photography', 'Final Asignment - Paint with the Camera'],
+        categories: ['Street Photography', 'Final Assignment - Paint with the Camera'],
         images: [
           /*// Shutter PHOTOGRAPHY
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5181.jpg', caption: 'Long exposure with car driving by - Nr. 1', category: 'Shutterspeed Photography' },
