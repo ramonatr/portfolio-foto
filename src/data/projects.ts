@@ -197,21 +197,10 @@ export const projects: Record<'en' | 'de', Project[]> = {
       ],
       gallery: [],
       galleryWithCategories: {
-        categories: ['Street Photography', 'Final Assignment - Paint with the Camera'],
+        categories: ['Street Photography','Slow Shutter Photography', 'Final Assignment - Paint with the Camera'],
         images: [
           /*// Shutter PHOTOGRAPHY
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5181.jpg', caption: 'Long exposure with car driving by - Nr. 1', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5182.jpg', caption: 'Long exposure with car driving by - Nr. 2', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5197.jpg', caption: 'Long exposure with car driving by - Nr. 3', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5200.jpg', caption: 'Long exposure with car driving by - Nr. 4', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5143.jpg', caption: 'Short exposure of motorcycle - Nr. 1', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5136.jpg', caption: 'Short exposure of motorcycle - Nr. 2', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5135.jpg', caption: 'Short exposure of motorcycle - Nr. 3', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5149.jpg', caption: 'Short exposure of motorcycle - Nr. 4', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5089.jpg', caption: 'Long exposure with camera movement - Nr. 1', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5094.jpg', caption: 'Long exposure with camera movement - Nr. 2', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5078.jpg', caption: 'Long exposure with camera movement - Nr. 3', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5076.jpg', caption: 'Long exposure with camera movement - Nr. 4', category: 'Shutterspeed Photography' },
+          
           */// Street PHOTOGRAPHY
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_A01.jpg', caption: 'People - Nr. 1', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_A02.jpg', caption: 'People - Nr. 2', category: 'Street Photography' },
@@ -223,13 +212,28 @@ export const projects: Record<'en' | 'de', Project[]> = {
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_C01.jpg', caption: 'Street - Nr. 1', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_C02.jpg', caption: 'Street - Nr. 2', category: 'Street Photography' },
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Street/Ramona_Treittinger_P3_IMG_C03.jpg?updatedAt=1778233033106', caption: 'Street - Nr. 3', category: 'Street Photography' },
+          
+          // Shutter
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5181.jpg', caption: 'Long exposure with car driving by - Nr. 1', category: 'Shutterspeed Photography' },
+          // src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5182.jpg', caption: 'Long exposure with car driving by - Nr. 2', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5197.jpg', caption: 'Long exposure with car driving by - Nr. 3', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5200.jpg', caption: 'Long exposure with car driving by - Nr. 4', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5143.jpg', caption: 'Short exposure of motorcycle - Nr. 1', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5136.jpg', caption: 'Short exposure of motorcycle - Nr. 2', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5135.jpg', caption: 'Short exposure of motorcycle - Nr. 3', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5149.jpg', caption: 'Short exposure of motorcycle - Nr. 4', category: 'Shutterspeed Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5089.jpg', caption: 'Long exposure with camera movement - Nr. 1', category: 'Slow Shutter Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5094.jpg', caption: 'Long exposure with camera movement - Nr. 2', category: 'Slow Shutter Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5078.jpg', caption: 'Long exposure with camera movement - Nr. 3', category: 'Slow Shutter Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5076.jpg', caption: 'Long exposure with camera movement - Nr. 4', category: 'Slow Shutter Photography' },
+          
           // Final Asignment - Paint with the Camera
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_06.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 1', category: 'Final Asignment - Paint with the Camera' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_07.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 2', category: 'Final Asignment - Paint with the Camera' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_10.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 3', category: 'Final Asignment - Paint with the Camera' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_02.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 4', category: 'Final Asignment - Paint with the Camera' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_03.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 5', category: 'Final Asignment - Paint with the Camera' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_05.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 6', category: 'Final Asignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_06.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 1', category: 'Final Assignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_07.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 2', category: 'Final Assignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_10.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 3', category: 'Final Assignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_02.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 4', category: 'Final Assignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_03.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 5', category: 'Final Assignment - Paint with the Camera' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_05.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 6', category: 'Final Assignment - Paint with the Camera' },
         ],
       },
       nextProject: 'AutomotiveUX',
