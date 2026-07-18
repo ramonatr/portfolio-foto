@@ -162,7 +162,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
         { title: 'Shooting', description: 'Execute photography sessions with attention to composition, exposure, and visual storytelling.', icon: '📸' },
         { title: 'Post-Processing', description: 'Edit images in Lightroom and Photoshop to enhance mood, color, and visual impact while maintaining authenticity.', icon: '🎨' },
         { title: 'Curation', description: 'Select best images and organize them into thematic series that tell a cohesive story.', icon: '✨' },
-        { title: 'Presentation', description: 'Design portfolio layout and create engaging descriptions for each series.', icon: '🖼️' },
+        //{ title: 'Presentation', description: 'Design portfolio layout and create engaging descriptions for each series.', icon: '🖼️' },
       ],
       solution: 'Ramona developed a distinctive photographic voice by deeply exploring three distinct genres. Each category demonstrates both technical mastery and artistic sensitivity, with careful attention to composition, lighting, and emotional impact.',
       solutionDetails: [
@@ -185,11 +185,11 @@ export const projects: Record<'en' | 'de', Project[]> = {
         'Created shareable portfolio suitable for exhibitions or freelance opportunities',
         'Received positive feedback from instructors and peers',
       ],*/
-      testimonial: {
+      /*testimonial: {
         quote: 'The growth from first shoot to final portfolio was remarkable. The technical skills are evident, but what impressed me most was the development of Ramona\'s artistic voice and creative vision.',
         author: 'Photography Instructor',
         role: 'Technische Hochschule Ingolstadt Department of Digital Media',
-      },
+      },*/
       learnings: [
         'Vision and consistency matter more than equipment — develop your unique perspective',
         'Post-processing is not cheating; it\'s part of the artistic expression and storytelling',
@@ -197,7 +197,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
       ],
       gallery: [],
       galleryWithCategories: {
-        categories: ['Street Photography','Slow Shutter Photography', 'Final Assignment - Paint with the Camera'],
+        categories: ['Street Photography','Shutterspeed Photography', 'Final Assignment - Paint with the Camera'],
         images: [
           /*// Shutter PHOTOGRAPHY
           
@@ -218,14 +218,14 @@ export const projects: Record<'en' | 'de', Project[]> = {
           // src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5182.jpg', caption: 'Long exposure with car driving by - Nr. 2', category: 'Shutterspeed Photography' },
           //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5197.jpg', caption: 'Long exposure with car driving by - Nr. 3', category: 'Shutterspeed Photography' },
           //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5200.jpg', caption: 'Long exposure with car driving by - Nr. 4', category: 'Shutterspeed Photography' },
-          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5143.jpg', caption: 'Short exposure of motorcycle - Nr. 1', category: 'Shutterspeed Photography' },
-          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5136.jpg', caption: 'Short exposure of motorcycle - Nr. 2', category: 'Shutterspeed Photography' },
-          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5135.jpg', caption: 'Short exposure of motorcycle - Nr. 3', category: 'Shutterspeed Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/New%20Shutter/IMG_5149.jpg', caption: 'Short exposure of motorcycle - Nr. 1', category: 'Shutterspeed Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/New%20Shutter/IMG_5135.jpg', caption: 'Short exposure of motorcycle - Nr. 2', category: 'Shutterspeed Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/New%20Shutter/IMG_5136.jpg', caption: 'Short exposure of motorcycle - Nr. 3', category: 'Shutterspeed Photography' },
           //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5149.jpg', caption: 'Short exposure of motorcycle - Nr. 4', category: 'Shutterspeed Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5089.jpg', caption: 'Long exposure with camera movement - Nr. 1', category: 'Slow Shutter Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5094.jpg', caption: 'Long exposure with camera movement - Nr. 2', category: 'Slow Shutter Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5078.jpg', caption: 'Long exposure with camera movement - Nr. 3', category: 'Slow Shutter Photography' },
-          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5076.jpg', caption: 'Long exposure with camera movement - Nr. 4', category: 'Slow Shutter Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/New%20Shutter/IMG_5078.jpg', caption: 'Long exposure with camera movement - Nr. 1', category: 'Shutterspeed Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/New%20Shutter/IMG_5089.jpg', caption: 'Long exposure with camera movement - Nr. 2', category: 'Shutterspeed Photography' },
+          { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/New%20Shutter/IMG_5092-2.jpg', caption: 'Long exposure with camera movement - Nr. 3', category: 'Shutterspeed Photography' },
+          //{ src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/IMG_5076.jpg', caption: 'Long exposure with camera movement - Nr. 4', category: 'Shutterspeed Photography' },
           
           // Final Asignment - Paint with the Camera
           { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Photos/Final/ShutterDrag_RamonaTreittinger_06.jpg', caption: 'Final Assignment - Paint with the Camera - Nr. 1', category: 'Final Assignment - Paint with the Camera' },
