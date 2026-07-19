@@ -4,10 +4,12 @@ import { projects } from '../data/projects';
 import Footer from '../components/Footer';
 import MasonryGallery from '../components/MasonryGallery';
 import { useEffect } from 'react';
+import { useInView } from '../hooks/useInView';
 
 export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
   const { language, t } = useLanguage();
+  const [ref, isVisible] = useInView<HTMLElement>();
   const project = projects[language].find((p) => p.id === id);
   const nextProject = project?.nextProject
     ? projects[language].find((p) => p.id === project.nextProject)
@@ -32,9 +34,9 @@ export default function ProjectPage() {
   if (project.id === 'photoportfolio' && project.galleryWithCategories) {
     const { categories, images } = project.galleryWithCategories;
     return (
-      <div className="project-detail">
+      <div className="project-detail" ref={ref}>
         {/* Header */}
-        <div className="project-detail__header">
+        <div className={`project-detail__header fade-in${isVisible ? ' fade-in--visible' : ''}`}>
           <Link to="/" className="project-detail__back">
             {t.projects.backToProjects}
           </Link>
@@ -86,7 +88,7 @@ export default function ProjectPage() {
 
           {/* Challenge Section */}
           {project.challenge && (
-            <div className="project-detail__section">
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.25s' }}>
               <h3>Challenge</h3>
               <p>{project.challenge}</p>
               {project.challengeDetails && (
@@ -101,7 +103,7 @@ export default function ProjectPage() {
 
           {/* Solution Section */}
           {project.solution && (
-            <div className="project-detail__section">
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.3s' }}>
               <h3>Solution</h3>
               <p>{project.solution}</p>
               {project.solutionDetails && (
@@ -116,14 +118,14 @@ export default function ProjectPage() {
 
           {/* Process Section */}
           {project.process && (
-            <div className="project-detail__section">
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.35s' }}>
               <h3>Process</h3>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
+              <div className="project-detail__process">
                 {project.process.map((step, i) => (
-                  <div key={i} style={{ padding: '1.5rem', border: '1px solid var(--color-border)', borderRadius: '8px' }}>
-                    <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{step.icon}</div>
-                    <h4 style={{ marginBottom: '0.5rem' }}>{step.title}</h4>
-                    <p style={{ color: 'var(--color-text-secondary)' }}>{step.description}</p>
+                  <div key={i} className="project-detail__process-step" style={{ transitionDelay: `${0.05 + i * 0.05}s` }}>
+                    <div className="project-detail__process-icon">{step.icon}</div>
+                    <h4>{step.title}</h4>
+                    <p>{step.description}</p>
                   </div>
                 ))}
               </div>
@@ -132,11 +134,11 @@ export default function ProjectPage() {
 
           {/* Key Features Section */}
           {project.keyFeatures && (
-            <div className="project-detail__section">
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.4s' }}>
               <h3>Key Features</h3>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
+              <div className="project-detail__features-grid">
                 {project.keyFeatures.map((feature, i) => (
-                  <div key={i}>
+                  <div key={i} className="project-detail__feature-card" style={{ transitionDelay: `${0.1 + i * 0.05}s` }}>
                     <h4 style={{ marginBottom: '0.75rem' }}>{feature.title}</h4>
                     <p style={{ color: 'var(--color-text-secondary)' }}>{feature.description}</p>
                   </div>
@@ -147,7 +149,7 @@ export default function ProjectPage() {
 
           {/* Results Section */}
           {project.results && (
-            <div className="project-detail__section">
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.45s' }}>
               <h3>Results</h3>
               <ul style={{ marginTop: '1rem' }}>
                 {project.results.map((result, i) => (
@@ -159,18 +161,20 @@ export default function ProjectPage() {
 
           {/* Testimonial Section */}
           {project.testimonial && (
-            <div className="project-detail__section" style={{ backgroundColor: 'var(--color-bg-card)', padding: '2rem', borderRadius: '12px' }}>
-              <blockquote style={{ fontStyle: 'italic', marginBottom: '1rem', fontSize: '1.1rem' }}>"{project.testimonial.quote}"</blockquote>
-              <div>
-                <strong>{project.testimonial.author}</strong>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{project.testimonial.role}</p>
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.5s' }}>
+              <div className="project-detail__testimonial" style={{ backgroundColor: 'var(--color-bg-card)', padding: '2rem', borderRadius: '12px' }}>
+                <blockquote style={{ fontStyle: 'italic', marginBottom: '1rem', fontSize: '1.1rem' }}>&quot;{project.testimonial.quote}&quot;</blockquote>
+                <div>
+                  <strong>{project.testimonial.author}</strong>
+                  <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{project.testimonial.role}</p>
+                </div>
               </div>
             </div>
           )}
 
           {/* Learnings Section */}
           {project.learnings && (
-            <div className="project-detail__section">
+            <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.55s' }}>
               <h3>Key Learnings</h3>
               <ul style={{ marginTop: '1rem' }}>
                 {project.learnings.map((learning, i) => (
@@ -181,7 +185,7 @@ export default function ProjectPage() {
           )}
 
           {/* Gallery Section */}
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.6s' }}>
             <h3>Photography Gallery</h3>
             <MasonryGallery images={images} categories={categories} />
           </div>
@@ -189,7 +193,7 @@ export default function ProjectPage() {
 
         {/* Next Project */}
         {nextProject && (
-          <div style={{ padding: '3rem 2rem', textAlign: 'center', borderTop: '1px solid var(--color-border)' }}>
+          <div className={`project-detail__next fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ padding: '3rem 2rem', textAlign: 'center', borderTop: '1px solid var(--color-border)', transitionDelay: '0.6s' }}>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>Next Project</p>
             <Link to={`/project/${nextProject.id}`} style={{ display: 'inline-block', color: 'var(--color-accent)', fontSize: '1.25rem', fontWeight: '600' }}>
               {nextProject.title} →
@@ -204,9 +208,9 @@ export default function ProjectPage() {
 
   // Standard-Layout für alle anderen Projekte
   return (
-    <div className="project-detail">
+    <div className="project-detail" ref={ref}>
       {/* Header */}
-      <div className="project-detail__header">
+      <div className={`project-detail__header fade-in${isVisible ? ' fade-in--visible' : ''}`}>
         <Link to="/" className="project-detail__back">
           {t.projects.backToProjects}
         </Link>
@@ -218,7 +222,7 @@ export default function ProjectPage() {
       {/* Body */}
       <div className="project-detail__body">
         {/* Hero Image */}
-        <div className="project-detail__hero-img">
+        <div className={`project-detail__hero-img fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.1s' }}>
           {project.thumbnail ? (
             <img src={project.thumbnail} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           ) : (
@@ -227,7 +231,7 @@ export default function ProjectPage() {
         </div>
 
         {/* Metadata */}
-        <div className="project-detail__meta">
+        <div className={`project-detail__meta fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
           {project.role && (
           <div className="project-detail__meta-item">
             <h4>{t.projects.role}</h4>
@@ -262,7 +266,7 @@ export default function ProjectPage() {
 
         {/* Challenge Section */}
         {project.challenge && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.25s' }}>
             <h3>Challenge</h3>
             <p>{project.challenge}</p>
             {project.challengeDetails && (
@@ -277,7 +281,7 @@ export default function ProjectPage() {
 
         {/* Solution Section */}
         {project.solution && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.3s' }}>
             <h3>Solution</h3>
             <p>{project.solution}</p>
             {project.solutionDetails && (
@@ -292,14 +296,14 @@ export default function ProjectPage() {
 
         {/* Process Section */}
         {project.process && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.35s' }}>
             <h3>Process</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
+            <div className="project-detail__process">
               {project.process.map((step, i) => (
-                <div key={i} style={{ padding: '1.5rem', border: '1px solid var(--color-border)', borderRadius: '8px' }}>
-                  <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{step.icon}</div>
-                  <h4 style={{ marginBottom: '0.5rem' }}>{step.title}</h4>
-                  <p style={{ color: 'var(--color-text-secondary)' }}>{step.description}</p>
+                <div key={i} className="project-detail__process-step" style={{ transitionDelay: `${0.05 + i * 0.05}s` }}>
+                  <div className="project-detail__process-icon">{step.icon}</div>
+                  <h4>{step.title}</h4>
+                  <p>{step.description}</p>
                 </div>
               ))}
             </div>
@@ -308,11 +312,11 @@ export default function ProjectPage() {
 
         {/* Key Features Section */}
         {project.keyFeatures && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.4s' }}>
             <h3>Key Features</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
+            <div className="project-detail__features-grid">
               {project.keyFeatures.map((feature, i) => (
-                <div key={i}>
+                <div key={i} className="project-detail__feature-card" style={{ transitionDelay: `${0.1 + i * 0.05}s` }}>
                   <h4 style={{ marginBottom: '0.75rem' }}>{feature.title}</h4>
                   <p style={{ color: 'var(--color-text-secondary)' }}>{feature.description}</p>
                 </div>
@@ -323,7 +327,7 @@ export default function ProjectPage() {
 
         {/* Results Section */}
         {project.results && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.45s' }}>
             <h3>Results</h3>
             <ul style={{ marginTop: '1rem' }}>
               {project.results.map((result, i) => (
@@ -335,18 +339,20 @@ export default function ProjectPage() {
 
         {/* Testimonial Section */}
         {project.testimonial && (
-          <div className="project-detail__section" style={{ backgroundColor: 'var(--color-bg-card)', padding: '2rem', borderRadius: '12px' }}>
-            <blockquote style={{ fontStyle: 'italic', marginBottom: '1rem', fontSize: '1.1rem' }}>"{project.testimonial.quote}"</blockquote>
-            <div>
-              <strong>{project.testimonial.author}</strong>
-              <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{project.testimonial.role}</p>
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.5s' }}>
+            <div className="project-detail__testimonial" style={{ padding: '2rem', borderRadius: '12px' }}>
+              <blockquote style={{ fontStyle: 'italic', marginBottom: '1rem', fontSize: '1.1rem' }}>&quot;{project.testimonial.quote}&quot;</blockquote>
+              <div>
+                <strong>{project.testimonial.author}</strong>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{project.testimonial.role}</p>
+              </div>
             </div>
           </div>
         )}
 
         {/* Learnings Section */}
         {project.learnings && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.55s' }}>
             <h3>Key Learnings</h3>
             <ul style={{ marginTop: '1rem' }}>
               {project.learnings.map((learning, i) => (
@@ -356,39 +362,23 @@ export default function ProjectPage() {
           </div>
         )}
 
-        {/* Gallery Section */} {/*
+        {/* Gallery Section */}
         {project.gallery && project.gallery.length > 0 && (
-          <div className="project-detail__section">
+          <div className={`project-detail__section fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ transitionDelay: '0.6s' }}>
             <h3>Gallery</h3>
             <p style={{ marginBottom: '1.5rem', color: 'var(--color-text-secondary)' }}>Visual highlights from the project</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '1rem' }}>
-              {project.gallery.map((img, i) => (
-                <div key={i} style={{ overflow: 'hidden', borderRadius: '12px' }}>
-                  <img src={img.src} alt={img.caption} style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
-                  <p style={{ padding: '1rem', backgroundColor: 'var(--color-bg-card)', margin: 0 }}>{img.caption}</p>
-                </div>
-              ))}
-            </div>
+            <MasonryGallery
+              images={project.gallery.map(img => ({ ...img, category: 'Gallery' }))}
+              categories={['Gallery']}
+            />
           </div>
-        )} */}
-
-        {/* Gallery Section */}
-      {project.gallery && project.gallery.length > 0 && (
-        <div className="project-detail__section">
-          <h3>Gallery</h3>
-          <p style={{ marginBottom: '1.5rem', color: 'var(--color-text-secondary)' }}>Visual highlights from the project</p>
-          <MasonryGallery
-            images={project.gallery.map(img => ({ ...img, category: 'Gallery' }))}
-            categories={['Gallery']}
-          />
-        </div>
       )}
         
       </div>
 
       {/* Next Project */}
       {nextProject && (
-        <div style={{ padding: '3rem 2rem', textAlign: 'center', borderTop: '1px solid var(--color-border)' }}>
+        <div className={`project-detail__next fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ padding: '3rem 2rem', textAlign: 'center', borderTop: '1px solid var(--color-border)', transitionDelay: '0.6s' }}>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>Next Project</p>
           <Link to={`/project/${nextProject.id}`} style={{ display: 'inline-block', color: 'var(--color-accent)', fontSize: '1.25rem', fontWeight: '600' }}>
             {nextProject.title} →

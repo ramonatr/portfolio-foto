@@ -18,7 +18,7 @@ export default function Projects() {
             <Link
               key={project.id}
               to={`/project/${project.id}`}
-              className={`project-card${isVisible ? ' project-card--visible' : ''}`}
+              className={`project-card${project.id === 'SafetyFirst' ? ' project-card--safety' : ''}${isVisible ? ' project-card--visible' : ''}`}
               style={{ transitionDelay: `${i * 0.15}s` }}
             >
               <div className="project-card__glow" />

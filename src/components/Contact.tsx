@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import SnakeGame from './SnakeGame';
+// import SnakeGame from './SnakeGame';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -16,7 +16,7 @@ export default function Contact() {
           ✉ {t.contact.email}
         </a>
       </div>
-      <SnakeGame />
+      {/* <SnakeGame /> */}
     </section>
   );
 }

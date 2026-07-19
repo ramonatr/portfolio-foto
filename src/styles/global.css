@@ -297,6 +297,9 @@ img {
   border-radius: 999px;
   background: rgba(59, 130, 246, 0.08);
   backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: badgeEntrance 0.8s ease-out 0.3s forwards;
 }
 
 .hero__badge-dot {
@@ -310,6 +313,26 @@ img {
 @keyframes pulse {
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.5); }
   50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(96, 165, 250, 0); }
+}
+
+@keyframes badgeEntrance {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes titleFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes glowPulseSlow {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.02); }
 }
 
 .hero__greeting-text {
@@ -384,11 +407,6 @@ img {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.hero__actions > :first-child,
-.hero__actions > :nth-child(2) {
-  /* buttons row - handled by wrapper */
 }
 
 .hero__cta {
@@ -501,6 +519,9 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: titleFadeIn 0.9s ease-out forwards;
 }
 
 .section__title::after {
@@ -559,6 +580,7 @@ img {
   background: var(--color-bg-card);
   position: relative;
   z-index: 1;
+  animation: floatSubtle 10s ease-in-out infinite;
 }
 
 .about__image-placeholder {
@@ -592,6 +614,7 @@ img {
   background: linear-gradient(135deg, #3b82f6, #2563eb, #1e40af);
   opacity: 0.4;
   z-index: 0;
+  animation: glowPulseSlow 8s ease-in-out infinite;
 }
 
 .about__content {
@@ -773,7 +796,9 @@ img {
   overflow: hidden;
   border: 1px solid var(--color-border);
   background: var(--color-bg-card);
+  background-clip: padding-box;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, box-shadow;
   cursor: pointer;
   text-decoration: none;
   display: block;
@@ -803,7 +828,15 @@ img {
 .project-card:hover {
   border-color: rgba(96, 165, 250, 0.4);
   transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(96, 165, 250, 0.12);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22), 0 0 30px rgba(96, 165, 250, 0.08);
+}
+
+.project-card--safety:hover {
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18), 0 0 22px rgba(96, 165, 250, 0.08);
+}
+
+.project-card--safety:hover .project-card__glow {
+  opacity: 0.6;
 }
 
 .project-card__thumbnail {
@@ -871,6 +904,11 @@ img {
   padding: 1.75rem;
   position: relative;
   z-index: 1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project-card:hover .project-card__info {
+  transform: translateY(-6px);
 }
 
 .project-card__category {
@@ -1038,6 +1076,17 @@ img {
 
 .project-detail__section {
   margin-bottom: 4rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in--visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-detail__section h3 {
