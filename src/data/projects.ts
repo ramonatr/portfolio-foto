@@ -849,7 +849,7 @@ export const smallProjects: Record<'en' | 'de', SmallProject[]> = {
       id: 'fizzle-soda',
       title: 'Fizzle Soda - Mini Branding Website',
       category: 'Website · Personal',
-      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Fizzle/Fizzle%20Soda.jpg',
+      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Fizzle/Mockup.jpg',
       color: '#4F46E5',
       year: '2025',
       overview: 'Small branding concept for a fictional soda brand, experimenting with color, typography, and ui animations.',
