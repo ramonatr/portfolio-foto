@@ -47,6 +47,21 @@ export interface Project {
   link?: ProjectLink;
 }
 
+export interface SmallProject {
+  id: string;
+  title: string;
+  category: string;
+  thumbnail: string;
+  color: string;
+  year: string;
+  overview: string;
+  description?: string;
+  gallery?: { src: string; caption: string }[];
+  tags?: string[];
+  link?: ProjectLink;
+  nextProject?: string;
+}
+
 export const projects: Record<'en' | 'de', Project[]> = {
   en: [
     {
@@ -318,7 +333,7 @@ export const projects: Record<'en' | 'de', Project[]> = {
       year: '2025',
       overview: 'In this project the assignment was to create an app that supports younger people in their mental health wellbeing. The design focuses on creating a safe and calming digital space that encourages self-care practices and promotes mental wellness. The app features a soothing color palette, intuitive navigation, and interactive elements that foster relaxation and mindfulness.',
       /*role: 'UI Designer',*/
-      duration: '4 months',
+      duration: '1 Semester',
       team: '3 UI designers',
       client: 'Technische Hochschule Ingolstadt',
       tools: ['Figma', 'Miro', 'Photoshop'],
@@ -826,4 +841,63 @@ export const projects: Record<'en' | 'de', Project[]> = {
       nextProject: 'photoportfolio',
     },
   ],
+};
+
+export const smallProjects: Record<'en' | 'de', SmallProject[]> = {
+  en: [
+    {
+      id: 'fizzle-soda',
+      title: 'Fizzle Soda - Mini Branding Website',
+      category: 'Website · Personal',
+      thumbnail: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Fizzle/Fizzle%20Soda.jpg',
+      color: '#4F46E5',
+      year: '2025',
+      overview: 'Small branding concept for a fictional soda brand, experimenting with color, typography, and ui animations.',
+      description: 'The prototype is less about a finished website and more about quick ideas, mood, and visual exploration. The goal was to get out of my comfort zone and explore what Figma has to offer.',
+      tags: ['Prototype', 'Website', 'Personal'],
+      link: { url: 'https://www.figma.com/proto/2ENEhm8cKYyYEt6OJTiBHN/Fizzle?node-id=1-2&p=f&viewport=-57%2C-4%2C0.39&t=6dF3q0PYa8uh4XNy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1', label: 'View in Figma' },
+      gallery: [
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Fizzle/Frame%201.jpg', caption: 'Landing Page' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Fizzle/Frame%202.jpg', caption: 'Soda Cans - Animated with fruits on hover' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/Fizzle/Desktop%20-%202.jpg', caption: 'Typography and Color Scheme - Animated text carousel and colorcode on hover' },
+      ],
+      nextProject: '-',
+    }, 
+    /*{
+      id: 'tiny-designs',
+      title: 'Tiny Design Explorations',
+      category: 'Visual Design · Side Projects',
+      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
+      color: '#EC4899',
+      year: '2024',
+      overview: 'Quick visual concepts for cards, social posts, and small layouts that emerged during everyday inspiration and experimentation.',
+      description: 'These are lightweight ideas that do not require a full process or a big production setup. They are intentionally simple, expressive, and easy to revisit.',
+      tags: ['Design', 'Social', 'Concepts'],
+      link: { url: 'https://www.figma.com/', label: 'View in Figma' },
+      gallery: [
+        { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80', caption: 'Layout idea' },
+        { src: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80', caption: 'Color experiment' },
+      ],
+      nextProject: 'photo-notes',
+    }, 
+    
+    {
+      id: 'photo-notes',
+      title: 'Photo Notes & Moodboards',
+      category: 'Photography · Personal',
+      thumbnail: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80',
+      color: '#0F766E',
+      year: '2023',
+      overview: 'A loose collection of image-based notes, references, and moodboards that helped shape visual direction without becoming a full project.',
+      description: 'This format keeps the focus on inspiration and atmosphere. The idea is to collect fragments that can later turn into stronger work or simply remain as personal visual notes.',
+      tags: ['Photography', 'Moodboard', 'Reference'],
+      link: { url: 'https://www.figma.com/', label: 'View in Figma' },
+      gallery: [
+        { src: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80', caption: 'Reference image' },
+        { src: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80', caption: 'Atmosphere study' },
+      ],
+      nextProject: 'poster-series',
+    },*/
+  ],
+  de: [],
 };

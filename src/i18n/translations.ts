@@ -37,6 +37,15 @@ export interface Translations {
     solution: string;
     results: string;
   };
+  smallProjects: {
+    sectionTitle: string;
+    sectionSubtitle: string;
+    viewProject: string;
+    backToProjects: string;
+    overview: string;
+    tags: string;
+    link: string;
+  };
   contact: {
     sectionTitle: string;
     description: string;
@@ -122,6 +131,15 @@ const en: Translations = {
     solution: 'The Solution',
     results: 'Results & Impact',
   },
+  smallProjects: {
+    sectionTitle: 'Small Private Projects',
+    sectionSubtitle: 'A little collection of private, smaller ideas like posters, quick visual experiments, and moodboards that grew alongside the main portfolio.',
+    viewProject: 'Open Project',
+    backToProjects: '← Back to Overview',
+    overview: 'Overview',
+    tags: 'Tags',
+    link: 'Link',
+  },
   contact: {
     sectionTitle: 'Let\'s Connect',
     description: 'I\'m always open to discussing new opportunities, creative ideas, or ways to bring your vision to life. Let\'s create something amazing together.',
@@ -206,6 +224,15 @@ const de: Translations = {
     challenge: 'Die Herausforderung',
     solution: 'Die Lösung',
     results: 'Ergebnisse & Impact',
+  },
+  smallProjects: {
+    sectionTitle: 'Kleine Private Projekte',
+    sectionSubtitle: 'Eine kleine Sammlung privater, kleiner Ideen wie Poster, schnelle visuelle Experimente und Moodboards, die neben dem Hauptportfolio entstanden sind.',
+    viewProject: 'Projekt öffnen',
+    backToProjects: '← Zurück zur Übersicht',
+    overview: 'Überblick',
+    tags: 'Tags',
+    link: 'Link',
   },
   contact: {
     sectionTitle: 'Kontakt aufnehmen',

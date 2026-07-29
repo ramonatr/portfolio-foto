@@ -3,6 +3,7 @@ import TrustBanner from '../components/TrustBanner';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import SmallProjects from '../components/SmallProjects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <About />
       <Skills />
       <Projects />
+      <SmallProjects />
       <Contact />
       <Footer />
     </>
