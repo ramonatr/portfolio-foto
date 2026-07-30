@@ -876,7 +876,7 @@ export const smallProjects: Record<'en' | 'de', SmallProject[]> = {
       link: { url: 'https://www.figma.com/proto/F6PAWUiqlYoRzasNbv1l8g/Challenges?page-id=0%3A1&node-id=58-32&viewport=-1146%2C-1095%2C1.61&t=KgTp8ngFeTskWHTj-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=58%3A32&show-proto-sidebar=1', label: 'View in Figma' },
       gallery: [
         { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/UI%20Challenges/Signup.jpg', caption: 'Sign Up Page' },
-        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/UI%20Challenges/Checkout.jpg', caption: 'Checkout Page' },
+        { src: 'https://ik.imagekit.io/pspu4pme7/Portfolio/UI%20Challenges/Checkout%20Variante%202.jpg', caption: 'Checkout Page' },
       ],
       nextProject: 'fizzle-soda',
     },    
