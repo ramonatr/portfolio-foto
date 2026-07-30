@@ -1331,13 +1331,14 @@ img {
 
 /* Design Process Timeline */
 .project-detail__process {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .project-detail__process-step {
+  flex: 1 1 200px;
   text-align: center;
   padding: 1.5rem 1rem;
   background: rgba(255, 255, 255, 0.02);
@@ -1379,13 +1380,14 @@ img {
 
 /* Key Features Grid */
 .project-detail__features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .project-detail__feature-card {
+  flex: 1 1 280px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--color-border);
   border-radius: 16px;
@@ -1658,8 +1660,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .project-detail__process {
-    grid-template-columns: repeat(2, 1fr);
+  .project-detail__process-step {
+    flex-basis: 45%;
   }
 
   .project-detail__meta {
@@ -1678,8 +1680,8 @@ img {
 }
 
 @media (max-width: 480px) {
-  .project-detail__process {
-    grid-template-columns: 1fr;
+  .project-detail__process-step {
+    flex-basis: 100%;
   }
 
   .project-detail__meta {
@@ -2003,13 +2005,13 @@ img {
 .masonry-gallery__lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   padding: 1rem;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
 }
 
 .masonry-gallery__lightbox-content {

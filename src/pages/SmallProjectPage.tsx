@@ -11,6 +11,9 @@ export default function SmallProjectPage() {
   const { language, t } = useLanguage();
   const [ref, isVisible] = useInView<HTMLElement>();
   const project = smallProjects[language].find((item) => item.id === id);
+  const nextProject = project?.nextProject
+    ? smallProjects[language].find((item) => item.id === project.nextProject)
+    : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -75,6 +78,15 @@ export default function SmallProjectPage() {
           </div>
         )}
       </div>
+      
+      {nextProject && (
+        <div className={`project-detail__next fade-in${isVisible ? ' fade-in--visible' : ''}`} style={{ padding: '3rem 2rem', textAlign: 'center', borderTop: '1px solid var(--color-border)', transitionDelay: '0.6s' }}>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>Next Project</p>
+        <Link to={`/small-project/${nextProject.id}`} style={{ display: 'inline-block', color: 'var(--color-accent)', fontSize: '1.25rem', fontWeight: '600' }}>
+          {nextProject.title} →
+        </Link>
+        </div>
+      )}
 
       <Footer />
     </div>

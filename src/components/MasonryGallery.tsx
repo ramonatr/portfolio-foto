@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 interface GalleryImage {
   src: string;
@@ -67,33 +68,34 @@ export default function MasonryGallery({ images, categories }: MasonryGalleryPro
       </div>
 
       {/* Lightbox Modal */}
-      {selectedImage && (
+      {selectedImage && createPortal(
         <div 
           className="masonry-gallery__lightbox"
           onClick={() => setSelectedImage(null)}
         >
-          <div 
-            className="masonry-gallery__lightbox-content"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="masonry-gallery__lightbox-close"
-              onClick={() => setSelectedImage(null)}
-              aria-label="Close"
-            >
-              ✕
-            </button>
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.caption}
-              className="masonry-gallery__lightbox-image"
-            />
-            <p className="masonry-gallery__lightbox-caption">
-              {selectedImage.caption}
-            </p>
-          </div>
-        </div>
-      )}
+        <div 
+          className="masonry-gallery__lightbox-content"
+          onClick={(e) => e.stopPropagation()}
+        >
+        <button
+          className="masonry-gallery__lightbox-close"
+          onClick={() => setSelectedImage(null)}
+          aria-label="Close"
+        >
+        ✕
+        </button>
+        <img
+          src={selectedImage.src}
+          alt={selectedImage.caption}
+          className="masonry-gallery__lightbox-image"
+        />
+        < p className="masonry-gallery__lightbox-caption">
+          {selectedImage.caption}
+        </p>
+      </div>
+    </div>,
+    document.body
+    )}
     </div>
   );
 }
